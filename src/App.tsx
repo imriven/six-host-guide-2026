@@ -1,5 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
+import { fullDescriptions } from "./fullDescriptions";
 type S = "Released" | "Not yet released";
 type G = {
   t: string;
@@ -7,6 +8,7 @@ type G = {
   p: string[];
   s: S;
   n: string;
+  l: string;
   online?: boolean;
   u?: string;
   slug: string;
@@ -405,6 +407,7 @@ const games: G[] = rows.map(([t, d, p, _s, n, online, u]) => {
     p: cleanPlatforms(t, p),
     s: released.has(t) ? "Released" : "Not yet released",
     n,
+    l: fullDescriptions[t] ?? n,
     online,
     u,
     slug: mediaSlug[t] ?? t.toLowerCase().replace(/[^a-z0-9]+/g, ""),
@@ -557,7 +560,12 @@ export default function Home() {
                 <div><dt>Release</dt><dd>{active.r}</dd></div>
                 <div><dt>Demo / build</dt><dd className={active.demo.includes("Demo available") ? "demoYes" : ""}>{active.demo}</dd></div>
               </dl>
-              <p>{active.n}</p>
+              <div className="descriptionBlock">
+                <h4>Quick overview</h4>
+                <p>{active.n}</p>
+                <h4>Full description</h4>
+                <p>{active.l}</p>
+              </div>
               <div className="actions">
                 <button onClick={() => move(-1)}>← Previous</button>
                 {active.u && (

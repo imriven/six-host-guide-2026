@@ -200,6 +200,9 @@ dl div { display: grid; grid-template-columns: 70px 1fr; gap: 8px; padding: 8px 
 dt { color: var(--muted); font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; }
 dd { margin: 0; font-size: 13px; font-weight: 700; }
 .demoYes { color:#fff; background:#7445c7; border-radius:6px; padding:4px 7px; width:max-content; max-width:100%; }
+.descriptionBlock { margin-top: 20px; }
+.descriptionBlock h4 { margin: 17px 0 5px; color: var(--mint); font-size: 12px; letter-spacing: .09em; text-transform: uppercase; }
+.descriptionBlock p { margin: 0; color: #d5d3dc; line-height: 1.65; }
 .statusChip { border-color: transparent !important; }
 .num {
   position: absolute;
