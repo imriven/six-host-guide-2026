@@ -533,8 +533,9 @@ export default function Home() {
           onClick={() => setSel(null)}
         >
           <article onClick={(e) => e.stopPropagation()}>
-            <button className="close" onClick={() => setSel(null)}>
-              ×
+            <button className="close" onClick={() => setSel(null)} aria-label="Back to games">
+              <span className="closeDesktop" aria-hidden="true">×</span>
+              <span className="closeMobile">← Back to games</span>
             </button>
             <div className="mediaViewer">
               {activeMedia[mediaIndex]?.type === "video" ? <iframe src={activeMedia[mediaIndex].src} title={`${active.t} trailer`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/> : <img src={activeMedia[mediaIndex]?.src} alt={`${active.t} screenshot ${mediaIndex}`} />}
