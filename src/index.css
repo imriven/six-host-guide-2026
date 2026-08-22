@@ -199,10 +199,19 @@ button {
   position: relative;
 }
 dl { margin: 15px 0 0; border-top: 1px solid var(--line); }
-dl div { display: grid; grid-template-columns: 70px 1fr; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+dl div { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--line); }
 dt { color: var(--muted); font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; }
-dd { margin: 0; font-size: 13px; font-weight: 700; }
-.demoYes { color:#fff; background:#7445c7; border-radius:6px; padding:4px 7px; width:max-content; max-width:100%; }
+dd { margin: 0; min-width: 0; font-size: 13px; font-weight: 700; }
+.demoYes {
+  color: #fff;
+  background: #7445c7;
+  border-radius: 6px;
+  padding: 4px 7px;
+  width: fit-content;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
 .descriptionBlock { margin-top: 20px; }
 .descriptionBlock h4 { margin: 17px 0 5px; color: var(--mint); font-size: 12px; letter-spacing: .09em; text-transform: uppercase; }
 .descriptionBlock p { margin: 0; color: #d5d3dc; line-height: 1.65; }
