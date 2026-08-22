@@ -131,6 +131,10 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
       <div className="timeline">
         {schedule.map((item, index) => {
           const game = item.gameIndex === undefined ? null : games[item.gameIndex];
+          const nextGameItem = item.kind === "game"
+            ? schedule.slice(index + 1).find((candidate) => candidate.kind === "game")
+            : undefined;
+          const nextGame = nextGameItem?.gameIndex === undefined ? null : games[nextGameItem.gameIndex];
           const isActive = item.id === activeId;
           const isNext = next?.id === item.id;
           const past = !manualId && item.end <= now;
@@ -150,14 +154,19 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
                   {game ? <>
                     <p>{game.n}</p>
                     <div className="cueGrid">
-                      <section><h3>Developer / guests</h3><p>Availability and on-camera guests: <b>To be confirmed</b></p></section>
-                      <section><h3>Pronunciation notes</h3><p>To be added</p></section>
-                      <section><h3>Interview questions</h3><p>To be added</p></section>
+                      <section className="developerBlurb"><h3>Developer</h3><p><b>{game.d}</b></p><p>Developer blurb to be added.</p></section>
                       <section><h3>Player impressions</h3><p>Useful comments and hands-on notes to be added</p></section>
-                      <section><h3>Talking points</h3><p>Key features, release status, and demo information are available in the Host Field Guide.</p></section>
-                      <section><h3>Transition cue</h3><p>Thank the developer, direct viewers to Seattle Indies, and prepare the next segment.</p></section>
+                      <section className="interviewQuestions"><h3>Interview questions</h3><p>To be added</p></section>
+                      <section className="nextUpCard">
+                        <h3>Next up after break</h3>
+                        {nextGameItem && nextGame ? (
+                          <p><b>{fmt(nextGameItem.start)} · Hosts {nextGameItem.hosts}</b><br />{nextGame.t} · {nextGame.d}</p>
+                        ) : (
+                          <p><b>{fmt(schedule[schedule.length - 1].start)} · Hosts A &amp; B</b><br />Closing / Thank You</p>
+                        )}
+                      </section>
                     </div>
-                    <div className="detailActions"><button onClick={() => onOpenGame(item.gameIndex!)}>Open complete game card →</button><button onClick={() => setManualId(item.id)}>Mark as current segment</button></div>
+                    <div className="detailActions"><button onClick={() => onOpenGame(item.gameIndex!)}>Open complete game card for talking points →</button><button onClick={() => setManualId(item.id)}>Mark as current segment</button></div>
                   </> : item.kind === "ad" ? <>
                     <h3>Placeholder ad copy</h3>
                     <p>Seattle Indies supports and connects independent game developers throughout the Pacific Northwest. Visit Seattle Indies to discover local projects, events, and ways to support the community. Sponsor messaging will be added when confirmed.</p>
