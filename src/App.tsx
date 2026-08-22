@@ -471,15 +471,15 @@ export default function Home() {
           placeholder="Search games, studios, or keywords"
           aria-label="Search games"
         />
-        <select value={p} onChange={(e) => setP(e.target.value)}>
+        <select value={p} onChange={(e) => setP(e.target.value)} aria-label="Filter by platform">
           <>
             {ps.map((x) => (
-              <option key={x}>{x}</option>
+              <option key={x} value={x}>{x === "All" ? "Platform" : x}</option>
             ))}
           </>
         </select>
-        <select value={s} onChange={(e) => setS(e.target.value)}>
-          <option>All</option>
+        <select value={s} onChange={(e) => setS(e.target.value)} aria-label="Filter by availability">
+          <option value="All">Availability</option>
           <option>Released</option>
           <option>Not yet released</option>
         </select>

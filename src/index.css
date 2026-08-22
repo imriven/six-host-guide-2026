@@ -119,8 +119,13 @@ button {
   color: #111;
 }
 .toolbar select {
-  background: var(--panel);
+  background: #f7f3ea;
+  color: #17171d;
+  border-color: #f7f3ea;
+  font-weight: 900;
+  cursor: pointer;
 }
+.toolbar select:focus-visible { outline: 3px solid var(--mint); outline-offset: 2px; }
 .toolbar button {
   background: var(--orange);
   font-weight: 900;
