@@ -28,6 +28,49 @@ select {
 button {
   color: inherit;
 }
+.siteNav { position:sticky; top:0; z-index:40; display:flex; justify-content:center; gap:8px; padding:10px 16px; background:#111118f2; border-bottom:1px solid var(--line); backdrop-filter:blur(14px); }
+.siteNav button { border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:10px 18px; font-weight:900; cursor:pointer; }
+.siteNav button.active { background:var(--mint); color:#111; border-color:var(--mint); }
+.rosPage { max-width:1100px; margin:auto; padding:56px 24px 80px; }
+.rosHero h1 { margin:18px 0 12px; font-size:clamp(48px,8vw,88px); line-height:.92; letter-spacing:-.065em; }
+.rosHero h1 em { color:var(--mint); font-style:normal; }
+.rosHero>p { max-width:720px; color:#cbc9d1; font-size:19px; line-height:1.5; }
+.rosActions { display:flex; flex-wrap:wrap; gap:8px; margin:24px 0; }
+.rosActions a,.rosActions button,.detailActions button,.nowPanel button,.segmentDetails>button { border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:var(--panel); color:var(--ink); text-decoration:none; font-weight:900; cursor:pointer; }
+.rosActions button,.detailActions button:first-child { background:var(--orange); border-color:var(--orange); }
+.nowPanel { position:sticky; top:62px; z-index:20; display:grid; grid-template-columns:1fr 1fr auto; gap:12px; padding:14px; margin:24px 0 14px; border:1px solid #65517c; border-radius:16px; background:#241b2ef2; backdrop-filter:blur(14px); box-shadow:0 12px 35px #0006; }
+.nowPanel div { min-width:0; }
+.nowPanel span { display:block; color:var(--orange); font-size:10px; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
+.nowPanel strong { display:block; margin-top:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.scheduleNote,.configHint { color:var(--muted); line-height:1.5; }
+.scheduleNote { padding:14px 16px; border:1px solid var(--line); border-radius:12px; margin-bottom:16px; }
+.timeline { display:grid; gap:10px; }
+.segment { scroll-margin-top:145px; border:1px solid var(--line); border-radius:16px; background:var(--panel); overflow:hidden; }
+.segmentSummary { width:100%; display:grid; grid-template-columns:92px 1fr auto; align-items:center; gap:14px; padding:15px; border:0; background:transparent; text-align:left; cursor:pointer; }
+.segmentTime { color:var(--mint); font-size:18px; font-weight:900; }
+.segmentTime small { display:block; color:var(--muted); font-size:11px; margin-top:2px; }
+.segmentMain small { display:block; color:var(--orange); font-size:10px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+.segmentMain strong { display:block; margin:3px 0; font-size:21px; }
+.segmentMain em { display:block; color:var(--muted); font-size:12px; font-style:normal; }
+.segmentState { min-width:58px; color:var(--muted); font-size:11px; font-weight:900; text-align:right; }
+.activeSegment { border-color:var(--mint); box-shadow:0 0 0 2px #b8f29a33; }
+.activeSegment .segmentState { color:var(--mint); }
+.nextSegment { border-color:var(--orange); }
+.nextSegment .segmentState { color:var(--orange); }
+.pastSegment { opacity:.52; }
+.ad { background:#2a1933; border-color:#7445c7; }
+.transition { background:#17171f; border-style:dashed; opacity:.78; }
+.transition .segmentMain strong { font-style:italic; font-weight:600; color:var(--muted); }
+.intro,.closing { background:#1d2a20; border-color:#6f9c60; }
+.intro .segmentMain strong,.closing .segmentMain strong { color:var(--mint); }
+.segmentDetails { padding:0 18px 20px 121px; color:#d5d3dc; line-height:1.55; }
+.segmentDetails h3 { margin:0 0 4px; color:var(--mint); font-size:11px; letter-spacing:.08em; text-transform:uppercase; }
+.segmentDetails p { margin:0 0 12px; }
+.cueGrid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:16px 0; }
+.cueGrid section { padding:12px; border:1px solid var(--line); border-radius:10px; background:#14141c; }
+.cueGrid section p { margin:0; font-size:13px; }
+.detailActions { display:flex; flex-wrap:wrap; gap:8px; }
+.configHint { margin-top:20px; font-size:12px; }
 .hero {
   max-width: 1400px;
   margin: auto;
@@ -336,6 +379,16 @@ footer {
   }
 }
 @media (max-width: 580px) {
+  .rosPage { padding:34px 14px 60px; }
+  .rosHero h1 { font-size:54px; }
+  .nowPanel { top:60px; grid-template-columns:1fr 1fr; }
+  .nowPanel button { grid-column:1/-1; }
+  .segmentSummary { grid-template-columns:72px 1fr auto; gap:9px; padding:13px 11px; }
+  .segmentTime { font-size:15px; }
+  .segmentMain strong { font-size:17px; }
+  .segmentState { min-width:42px; font-size:9px; }
+  .segmentDetails { padding:0 12px 16px; }
+  .cueGrid { grid-template-columns:1fr; }
   .hero {
     padding: 45px 18px 30px;
   }

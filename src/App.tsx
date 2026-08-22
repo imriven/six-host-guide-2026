@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import { fullDescriptions } from "./fullDescriptions";
+import RunOfShow from "./RunOfShow";
 type S = "Released" | "Not yet released";
 type G = {
   t: string;
@@ -423,6 +424,7 @@ const games: G[] = rows.map(([t, d, p, _s, n, online, u]) => {
 const art = (g: G) =>
   `https://firebasestorage.googleapis.com/v0/b/seattle-indies-expo.appspot.com/o/2026%2F${g.slug}%2Flogo?alt=media`;
 export default function Home() {
+  const [page, setPage] = useState<"guide" | "run">("guide");
   const [q, setQ] = useState("");
   const [p, setP] = useState("All");
   const [s, setS] = useState("All");
@@ -448,8 +450,18 @@ export default function Home() {
     {type:"video",src:`https://www.youtube.com/embed/${videoIds[active.t]}?rel=0`},
     ...[0,1].map((i)=>({type:"image",src:`https://firebasestorage.googleapis.com/v0/b/seattle-indies-expo.appspot.com/o/2026%2F${mediaFolder[active.t] ?? active.t.toLowerCase().replace(/[^a-z0-9]+/g,"")}%2Fscreenshots-${i}?alt=media`}))
   ] : [];
+  const openGame = (index: number) => {
+    setPage("guide");
+    setMediaIndex(0);
+    setSel(index);
+  };
   return (
     <main>
+      <nav className="siteNav" aria-label="Host tools">
+        <button className={page === "guide" ? "active" : ""} onClick={() => setPage("guide")}>Game Guide</button>
+        <button className={page === "run" ? "active" : ""} onClick={() => setPage("run")}>Run of Show</button>
+      </nav>
+      {page === "run" ? <RunOfShow games={games} onOpenGame={openGame} /> : <>
       <header className="hero">
         <div className="kicker">Seattle Indies Expo · 2026</div>
         <h1>
@@ -587,6 +599,7 @@ export default function Home() {
         Source: Seattle Indies Expo 2026 lineup and linked official storefronts.
         Availability can change; checked August 21, 2026.
       </footer>
+      </>}
     </main>
   );
 }
