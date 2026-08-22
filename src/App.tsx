@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { fullDescriptions } from "./fullDescriptions";
 import RunOfShow from "./RunOfShow";
 type S = "Released" | "Not yet released";
@@ -424,7 +424,8 @@ const games: G[] = rows.map(([t, d, p, _s, n, online, u]) => {
 const art = (g: G) =>
   `https://firebasestorage.googleapis.com/v0/b/seattle-indies-expo.appspot.com/o/2026%2F${g.slug}%2Flogo?alt=media`;
 export default function Home() {
-  const [page, setPage] = useState<"guide" | "run">("guide");
+  const pageFromPath = () => window.location.pathname.replace(/\/$/, "") === "/run-of-show" ? "run" as const : "guide" as const;
+  const [page, setPage] = useState<"guide" | "run">(pageFromPath);
   const [q, setQ] = useState("");
   const [p, setP] = useState("All");
   const [s, setS] = useState("All");
@@ -450,16 +451,27 @@ export default function Home() {
     {type:"video",src:`https://www.youtube.com/embed/${videoIds[active.t]}?rel=0`},
     ...[0,1].map((i)=>({type:"image",src:`https://firebasestorage.googleapis.com/v0/b/seattle-indies-expo.appspot.com/o/2026%2F${mediaFolder[active.t] ?? active.t.toLowerCase().replace(/[^a-z0-9]+/g,"")}%2Fscreenshots-${i}?alt=media`}))
   ] : [];
+  useEffect(() => {
+    const syncPage = () => setPage(pageFromPath());
+    window.addEventListener("popstate", syncPage);
+    return () => window.removeEventListener("popstate", syncPage);
+  }, []);
+  const navigate = (destination: "guide" | "run") => {
+    const path = destination === "run" ? "/run-of-show" : "/";
+    if (window.location.pathname !== path) window.history.pushState({}, "", path);
+    setPage(destination);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   const openGame = (index: number) => {
-    setPage("guide");
+    navigate("guide");
     setMediaIndex(0);
     setSel(index);
   };
   return (
     <main>
       <nav className="siteNav" aria-label="Host tools">
-        <button className={page === "guide" ? "active" : ""} onClick={() => setPage("guide")}>Game Guide</button>
-        <button className={page === "run" ? "active" : ""} onClick={() => setPage("run")}>Run of Show</button>
+        <button className={page === "guide" ? "active" : ""} onClick={() => navigate("guide")}>Game Guide</button>
+        <button className={page === "run" ? "active" : ""} onClick={() => navigate("run")}>Run of Show</button>
       </nav>
       {page === "run" ? <RunOfShow games={games} onOpenGame={openGame} /> : <>
       <header className="hero">
