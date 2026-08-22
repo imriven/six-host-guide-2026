@@ -321,8 +321,8 @@ const release: Record<string, [string, string]> = {
   ],
   BroomSweeper: ["January 19, 2026", "Demo available on Steam"],
   "Cooking Fist": ["To be announced", "No public demo listed"],
-  "Creature Kitchen": ["February 6, 2026", "Demo available on Steam"],
-  Desolus: ["Q3 2026 / Steam lists coming soon", "Demo available on Steam"],
+  "Creature Kitchen": ["February 6, 2026", "Demo available on Steam and itch.io"],
+  Desolus: ["Q3 2026 / Steam lists coming soon", "Demo available on Steam and Xbox"],
   Diabolocracy: ["2027", "No public demo listed"],
   "Dig Too Deep": ["2026", "Demo available on Steam"],
   Dittori: ["To be announced", "Demo available on Steam"],
@@ -335,10 +335,10 @@ const release: Record<string, [string, string]> = {
   "Haunted Heist": ["October 12, 2026", "No public demo listed"],
   Hogen: ["April 2, 2025", "Demo available on Steam"],
   HYPERFIST: ["July 10, 2026", "No public demo listed"],
-  "Killing Baby Hitler": ["2027", "Demo available on Steam"],
+  "Killing Baby Hitler": ["2027", "Demo available on Steam and itch.io"],
   "Knockout 2: Wrath of the Karen": [
     "April 9, 2026",
-    "Demo available on Steam",
+    "Demo available on Steam and mobile",
   ],
   "Malice In Wonderland": ["To be announced", "Demo available on Steam"],
   "Manafinder II": ["Q1 2027", "No public demo listed"],
@@ -352,14 +352,14 @@ const release: Record<string, [string, string]> = {
   ],
   "Seedborne Soldiers": ["June 1, 2026", "Demo available on Steam"],
   Shroomwood: ["2026", "Demo and playtest available on Steam"],
-  "Steel Swarm: SURVIVOR": ["Coming soon", "Demo available on Steam"],
-  "Super Choppy": ["To be announced", "Demo available on Steam"],
+  "Steel Swarm: SURVIVOR": ["Coming soon", "Demo available on Steam and itch.io"],
+  "Super Choppy": ["To be announced", "Demo available on Steam and itch.io"],
   Telera: ["2026", "Demo available on Steam"],
   "The Assessment": ["Q4 2026", "No public demo listed"],
   TileShire: ["2026", "No public demo listed"],
   "Tower Lab": ["September 7, 2026", "No public demo listed"],
   "Tricky and the Dream Caster": ["Q4 2027", "Demo available on Steam"],
-  "Turning Manor": ["2026", "Demo available on Steam"],
+  "Turning Manor": ["2026", "Demo available on Steam and itch.io"],
   "We Need An Army": ["Q4 2026", "No public demo listed"],
   "WILL: Follow The Light": ["May 7, 2026", "Demo available on Steam"],
   "Wrestle Story": ["To be announced", "No public demo listed"],
@@ -395,9 +395,14 @@ const steamIds: Record<string, string> = {
 };
 const cleanPlatforms = (title: string, platforms: string) => {
   if (title === "Breach Of Contract" || title === "Feeding Gooble") return ["itch.io"];
+  const labels = new Set<string>();
   const items = platforms.split(", ");
-  const cleaned = items.filter((x) => !["PC", "Mac", "Linux"].includes(x));
-  return cleaned.length ? cleaned : ["Computer"];
+  if (items.includes("Steam") || steamIds[title]) labels.add("Steam");
+  if (items.includes("Mobile")) labels.add("Mobile");
+  if (items.some((x) => x === "PS5" || x === "PlayStation")) labels.add("PlayStation");
+  if (items.some((x) => x === "Xbox Series" || x === "Xbox")) labels.add("Xbox");
+  if (items.some((x) => x === "Switch 2" || x === "Switch")) labels.add("Switch");
+  return Array.from(labels);
 };
 const games: G[] = rows.map(([t, d, p, _s, n, online, u]) => {
   const [r, demo] = release[t] ?? ["In development", "Not confirmed"];
@@ -471,14 +476,12 @@ export default function Home() {
           placeholder="Search games, studios, or keywords"
           aria-label="Search games"
         />
-        <select value={p} onChange={(e) => setP(e.target.value)} aria-label="Filter by platform">
-          <>
-            {ps.map((x) => (
-              <option key={x} value={x}>{x === "All" ? "Platform" : x}</option>
-            ))}
-          </>
+        <select value={p} onChange={(e) => setP(e.target.value)}>
+          {ps.map((x) => (
+            <option key={x} value={x}>{x === "All" ? "Platform" : x}</option>
+          ))}
         </select>
-        <select value={s} onChange={(e) => setS(e.target.value)} aria-label="Filter by availability">
+        <select value={s} onChange={(e) => setS(e.target.value)}>
           <option value="All">Availability</option>
           <option>Released</option>
           <option>Not yet released</option>
