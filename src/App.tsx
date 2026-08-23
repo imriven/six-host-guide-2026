@@ -32,6 +32,8 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "PC",
     "Verify status",
     "Fast tactical action: plan each breach, wield eldritch powers, and eliminate enemies to recharge.",
+    false,
+    "https://fern-sprout-studios.itch.io/breach-of-contract",
   ],
   [
     "BroomSweeper",
