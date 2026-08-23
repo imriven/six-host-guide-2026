@@ -362,7 +362,7 @@ const release: Record<string, [string, string]> = {
   "Tricky and the Dream Caster": ["Q4 2027", "Demo available on Steam"],
   "Turning Manor": ["2026", "Demo available on Steam and itch.io"],
   "We Need An Army": ["Q4 2026", "No public demo listed"],
-  "WILL: Follow The Light": ["May 7, 2026", "Demo available on Steam"],
+  "WILL: Follow The Light": ["May 7, 2026", "No public demo currently available"],
   "Wrestle Story": ["To be announced", "No public demo listed"],
   "Hit & Haunted": ["To be announced", "Demo available on Steam"],
 };
