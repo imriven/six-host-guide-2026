@@ -38,7 +38,6 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "Released",
     "Minesweeper gone roguelike, with 150+ items, dust bunnies, and 16 floors of janitorial danger.",
     false,
-    "https://store.steampowered.com/app/3473250/BroomSweeper/",
   ],
   [
     "Cooking Fist",
