@@ -23,7 +23,7 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "PC, Steam",
     "Verify status",
     "Competitive multiplayer racing blending driving, combat, ship upgrades, and four tactical heats.",
-    false,
+    undefined,
     "https://www.ascentrivals.com/",
   ],
   [
