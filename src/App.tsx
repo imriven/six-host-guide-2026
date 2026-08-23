@@ -48,6 +48,8 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "PC",
     "Verify status",
     "A cooking fighting game with no health bars—fight for ingredients, pause to cook, and win by making the most food.",
+    false,
+    "https://cookingfist.com/"
   ],
   [
     "Creature Kitchen",
@@ -55,8 +57,6 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "PC, Steam",
     "Released",
     "A creepy-cozy cooking simulator about exploring a strange house and feeding local wildlife.",
-    false,
-    "https://store.steampowered.com/app/3097300/Creature_Kitchen/",
   ],
   [
     "Desolus",
@@ -73,8 +73,6 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "PC, Steam",
     "Upcoming",
     "Hellish corporate politics become a roguelite turn-based tactics game starring a team of Sins.",
-    false,
-    "https://store.steampowered.com/app/4143850/Diabolocracy/",
   ],
   [
     "Dig Too Deep",
