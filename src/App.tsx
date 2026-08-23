@@ -316,13 +316,10 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
 
 ];
 const release: Record<string, [string, string]> = {
-  "Ascent Rivals": ["Q4 2026", "No public demo listed"],
-  "Breach Of Contract": [
-    "Public beta released June 20, 2026",
-    "Free beta on itch.io",
-  ],
+  "Ascent Rivals": ["Q4 2026", "NA"],
   BroomSweeper: ["January 19, 2026", "Demo available on Steam"],
-  "Cooking Fist": ["To be announced", "No public demo listed"],
+  "Breach of Contract": ["June 20, 2026", "Beta on itch.io"],
+  "Cooking Fist": ["To be announced", "NA"],
   "Creature Kitchen": ["February 6, 2026", "Demo available on Steam and itch.io"],
   Desolus: ["Q3 2026 / Steam lists coming soon", "Demo available on Steam and Xbox"],
   Diabolocracy: ["2027", "No public demo listed"],
