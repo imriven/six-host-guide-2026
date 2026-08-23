@@ -32,7 +32,7 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "PC",
     "Verify status",
     "Fast tactical action: plan each breach, wield eldritch powers, and eliminate enemies to recharge.",
-    false,
+    undefined,
     "https://fern-sprout-studios.itch.io/breach-of-contract",
   ],
   [
@@ -48,7 +48,7 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "PC",
     "Verify status",
     "A cooking fighting game with no health bars—fight for ingredients, pause to cook, and win by making the most food.",
-    false,
+    undefined,
     "https://cookingfist.com/"
   ],
   [
@@ -64,7 +64,7 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "PC, Steam, PS5, Switch 2, Xbox Series",
     "Upcoming",
     "A Gothic first-person puzzle game about black holes, impossible architecture, and rebuilding a city across time.",
-    false,
+    undefined,
     "https://www.desolus.com",
   ],
   [
@@ -136,6 +136,14 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "PC, Linux, Steam",
     "Verify status",
     "A 3–10 player PvP horror party game: heisters steal gems while tricksters weaponize a procedural mansion.",
+  ],
+    [
+    "Hit & Haunted",
+    "Amnesiac Ghost",
+    "PC, Steam",
+    "Verify status",
+    "A murder mystery where you play both the hitman and the victim’s ghost to uncover who ordered the hit.",
+    undefined,
   ],
   [
     "Hogen",
@@ -305,14 +313,7 @@ const rows: [string, string, string, string, string, boolean?, string?][] = [
     "Verify status",
     "A smack-talking 3D wrestling RPG about creating a wrestler, building a tag team, and living the story.",
   ],
-  [
-    "Hit & Haunted",
-    "Amnesiac Ghost",
-    "PC, Steam",
-    "Verify status",
-    "A murder mystery where you play both the hitman and the victim’s ghost to uncover who ordered the hit.",
-    true,
-  ],
+
 ];
 const release: Record<string, [string, string]> = {
   "Ascent Rivals": ["Q4 2026", "No public demo listed"],
