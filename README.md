@@ -7,8 +7,9 @@ A mobile-friendly React reference guide for the SIX 2026 lineup. It includes sea
 1. Install Node.js 22 and Python 3.12 or newer.
 2. Open a terminal in this folder.
 3. Run `npm install`.
-4. Run `npm run dev`.
-5. Open the address shown in the terminal.
+4. Run `python -m pip install -r requirements.txt`.
+5. Run `npm run dev`.
+6. Open the address shown in the terminal.
 
 `npm run dev` validates the workbook and regenerates the app data before Vite
 starts.
@@ -25,8 +26,9 @@ starts.
 Future changes pushed to the GitHub repository will automatically trigger a new Netlify deployment.
 
 Netlify's build image includes Python. The repository pins Python 3.12 in
-`netlify.toml`, and the converter uses only the standard library, so there are
-no Python packages to install.
+`netlify.toml`, and Netlify installs the document-generation packages declared
+in `requirements.txt` before running the build. The XLSX converter itself uses
+only the Python standard library.
 
 ## Important files
 
@@ -35,6 +37,10 @@ no Python packages to install.
 - `scripts/xlsx_to_json.py` validates the workbook and generates app data.
 - `src/generated/games.json` and `src/generated/runOfShow.json` are generated;
   do not edit them by hand.
+- `scripts/build_ros_docx.py` and `scripts/build_ros_pdf_only.py` generate the
+  downloadable run-of-show documents from the workbook.
+- `public/SIX-2026-Run-of-Show.docx` and
+  `public/SIX-2026-Run-of-Show.pdf` are generated; do not edit them by hand.
 - `src/App.tsx` and `src/RunOfShow.tsx` contain the interfaces, not event data.
 - `src/index.css` contains the visual styling and responsive layout.
 - `public/SIX-2026-Game-Guide.pdf` is the printable guide.
@@ -46,9 +52,15 @@ no Python packages to install.
 2. Replace `public/SIX-2026-Run-of-Show.xlsx` with that file. Keep both the
    `Run of Show` and `descriptions` worksheet names unchanged.
 3. Run `npm run build`. This validates the workbook, regenerates both JSON
-   files, runs the converter tests and TypeScript checks, and builds the site.
-4. Commit the workbook and generated JSON together, then push. Netlify runs the
-   converter again before every deployment.
+   files and both run-of-show documents, runs the converter tests and
+   TypeScript checks, and builds the site.
+4. Commit the workbook and locally generated files together, then push.
+   Netlify regenerates them again before every deployment.
+
+Files generated during a Netlify build are included in that deployment but are
+not committed or pushed back to GitHub. A local `npm run build` updates the
+tracked generated files in your working tree so they can be committed when
+desired.
 
 Game names link the worksheets: each game row in `Run of Show` must use the
 exact `Name` from `descriptions` in its `GAME / BREAK` cell. Move those rows to
@@ -66,6 +78,7 @@ Useful commands:
 
 - `npm run build` is the normal all-in-one local command.
 - `npm run dev` regenerates data and starts the local development server.
+- `npm run documents:build` regenerates only the run-of-show DOCX and PDF.
 - `npm run data:check` is the CI-oriented freshness check for committed JSON.
 
 GitHub Actions runs the data tests, freshness check, and production build on

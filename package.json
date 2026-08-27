@@ -6,10 +6,11 @@
   "scripts": {
     "data:build": "python scripts/xlsx_to_json.py",
     "data:check": "python scripts/xlsx_to_json.py --check",
+    "documents:build": "python scripts/build_ros_docx.py && python scripts/build_ros_pdf_only.py",
     "test:data": "python -m unittest discover -s scripts -p test_*.py -v",
     "check": "npm run data:check && npm run test:data && tsc -b",
     "dev": "npm run data:build && vite",
-    "build": "npm run data:build && npm run test:data && tsc -b && vite build",
+    "build": "npm run data:build && npm run test:data && tsc -b && npm run documents:build && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
