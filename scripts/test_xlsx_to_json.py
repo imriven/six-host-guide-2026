@@ -16,12 +16,12 @@ class WorkbookDataTests(unittest.TestCase):
         self.assertEqual(41, len(games))
         self.assertEqual(90, len(schedule["items"]))
         self.assertIn("Host A =", schedule["hostNote"])
-        self.assertEqual(1, games[0]["id"])
-        self.assertEqual(17, games[16]["id"])
+        self.assertEqual("Ascent Rivals", games[0]["title"])
+        self.assertEqual("Hit & Haunted", games[16]["title"])
         self.assertEqual(
-            {game["id"] for game in games},
+            {game["title"] for game in games},
             {
-                item["gameId"]
+                item["title"]
                 for item in schedule["items"]
                 if item["kind"] == "game"
             },
@@ -31,13 +31,13 @@ class WorkbookDataTests(unittest.TestCase):
         self.assertEqual("10:00 AM", normalize_time("0.4166666667", "test"))
         self.assertEqual("4:05 PM", normalize_time("16:05", "test"))
 
-    def test_schema_has_stable_id_and_production_notes(self):
-        self.assertEqual("Game ID", GAME_HEADERS[0])
-        self.assertIn("GAME ID", RUN_HEADERS)
+    def test_schema_uses_name_and_production_notes(self):
+        self.assertEqual("Name", GAME_HEADERS[0])
+        self.assertNotIn("GAME ID", RUN_HEADERS)
         self.assertIn("PRODUCTION NOTES", RUN_HEADERS)
 
-    def test_schedule_joins_by_integer_id_when_titles_differ(self):
-        def row(segment, title, game_id, start, end):
+    def test_schedule_joins_by_name_after_rows_are_moved(self):
+        def row(segment, title, start, end):
             return {
                 "SEG": segment,
                 "GAME / BREAK": title,
@@ -46,19 +46,22 @@ class WorkbookDataTests(unittest.TestCase):
                 "END": end,
                 "HOSTS": "A & B",
                 "PRODUCTION NOTES": "",
-                "GAME ID": game_id,
             }
 
-        games = [{"id": 101, "title": "Renamed Catalogue Title"}]
+        games = [{"title": "First Game"}, {"title": "Second Game"}]
         records = [
-            row("1", "Opening / Welcome", "", "10:00 AM", "10:05 AM"),
-            row("2", "Different Broadcast Title", "101", "10:05 AM", "10:11 AM"),
-            row("3", "Closing / Thank You", "", "10:11 AM", "10:16 AM"),
+            row("1", "Opening / Welcome", "10:00 AM", "10:05 AM"),
+            row("2", "Second Game", "10:05 AM", "10:11 AM"),
+            row("3", "First Game", "10:11 AM", "10:17 AM"),
+            row("4", "Closing / Thank You", "10:17 AM", "10:22 AM"),
         ]
 
         schedule = validate_schedule(records, games)
 
-        self.assertEqual(101, schedule[1]["gameId"])
+        self.assertEqual(
+            ["Second Game", "First Game"],
+            [item["title"] for item in schedule[1:3]],
+        )
 
 
 if __name__ == "__main__":

@@ -103,7 +103,7 @@ export default function Home() {
           <button
             id={`letter-${g.t[0].toUpperCase()}`}
             className="card"
-            key={g.id}
+            key={g.t}
             onClick={() => { setMediaIndex(0); setSel(games.indexOf(g)); }}
           >
             <div className="art">

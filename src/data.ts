@@ -3,7 +3,6 @@ import gameData from "./generated/games.json";
 export type Availability = "Released" | "Not yet released";
 
 type GeneratedGame = {
-  id: number;
   title: string;
   developer: string;
   platforms: string[];
@@ -21,7 +20,6 @@ type GeneratedGame = {
 };
 
 export type Game = {
-  id: number;
   t: string;
   d: string;
   p: string[];
@@ -38,7 +36,6 @@ export type Game = {
 };
 
 export const games: Game[] = (gameData as GeneratedGame[]).map((game) => ({
-  id: game.id,
   t: game.title,
   d: game.developer,
   p: game.displayPlatforms,

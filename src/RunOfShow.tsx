@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import runOfShowData from "./generated/runOfShow.json";
 
-export type RunGame = { id: number; t: string; d: string; n: string };
+export type RunGame = { t: string; d: string; n: string };
 
 type Props = {
   games: RunGame[];
@@ -24,7 +24,6 @@ type GeneratedScheduleItem = {
   id: string;
   kind: ScheduleItem["kind"];
   segmentNumber: number | null;
-  gameId: number | null;
   title: string;
   start: string;
   end: string;
@@ -52,13 +51,13 @@ function timeOnDay(day: Date, clock: string): Date {
 }
 
 function makeSchedule(games: RunGame[], day: Date): ScheduleItem[] {
-  const gameIndexById = new Map(games.map((game, index) => [game.id, index]));
+  const gameIndexByTitle = new Map(games.map((game, index) => [game.t, index]));
   return generatedRunOfShow.items.map((item) => ({
     id: item.id,
     kind: item.kind,
     start: timeOnDay(day, item.start),
     end: timeOnDay(day, item.end),
-    gameIndex: item.gameId ? gameIndexById.get(item.gameId) : undefined,
+    gameIndex: item.kind === "game" ? gameIndexByTitle.get(item.title) : undefined,
     hosts: item.hosts,
     segmentNumber: item.segmentNumber ?? undefined,
     title: item.title,
