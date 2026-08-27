@@ -3,8 +3,8 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "22"
-  PYTHON_VERSION = "3.12"
+  NODE_VERSION = "24.20.0"
+  PYTHON_VERSION = "3.14.7"
 
 [[redirects]]
   from = "/*"

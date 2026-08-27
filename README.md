@@ -4,7 +4,7 @@ A mobile-friendly React reference guide for the SIX 2026 lineup. It includes sea
 
 ## Run it locally
 
-1. Install Node.js 22 and Python 3.12 or newer.
+1. Install Node.js 24.20.0 (with npm 11.19.0) and Python 3.14.7.
 2. Open a terminal in this folder.
 3. Run `npm install`.
 4. Run `python -m pip install -r requirements.txt`.
@@ -25,10 +25,11 @@ starts.
 
 Future changes pushed to the GitHub repository will automatically trigger a new Netlify deployment.
 
-Netlify's build image includes Python. The repository pins Python 3.12 in
-`netlify.toml`, and Netlify installs the document-generation packages declared
-in `requirements.txt` before running the build. The XLSX converter itself uses
-only the Python standard library.
+Netlify's build image includes Python. The repository pins Node.js 24.20.0 and
+Python 3.14.7 in `netlify.toml`; `package.json` pins npm 11.19.0 and every npm
+dependency; and `requirements.txt` pins the complete Python dependency set.
+Netlify installs those dependencies before running the build. The XLSX
+converter itself uses only the Python standard library.
 
 ## Important files
 
