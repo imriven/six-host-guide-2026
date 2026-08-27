@@ -24,9 +24,19 @@ Future changes pushed to the GitHub repository will automatically trigger a new 
 ## Important files
 
 - `src/App.tsx` contains the game information and interface.
+- `src/fullDescriptions.ts` contains the long game descriptions.
 - `src/index.css` contains the visual styling and responsive layout.
 - `public/SIX-2026-Game-Guide.pdf` is the printable guide.
 - `public/SIX-2026-Game-Guide.docx` is the editable document.
+- `public/SIX-2026-Run-of-Show.xlsx` contains the production run of show on its
+  first tab and the app's game metadata on its `descriptions` tab.
+
+## Regenerate the spreadsheet
+
+Run `python scripts/build_ros_xlsx.py` from the repository root. The script
+preserves the existing `Run of Show` tab and adds or replaces the
+`descriptions` tab using the game data currently stored in `src/App.tsx` and
+`src/fullDescriptions.ts`. It uses only the Python standard library.
 
 ## Verify before the event
 
