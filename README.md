@@ -45,10 +45,9 @@ no Python packages to install.
 1. Edit or download the updated `SIX-2026-Run-of-Show.xlsx` workbook.
 2. Replace `public/SIX-2026-Run-of-Show.xlsx` with that file. Keep both the
    `Run of Show` and `descriptions` worksheet names unchanged.
-3. Run `npm run data:build` to validate the workbook and regenerate both JSON
-   files.
-4. Run `npm run check` and `npm run build`.
-5. Commit the workbook and generated JSON together, then push. Netlify runs the
+3. Run `npm run build`. This validates the workbook, regenerates both JSON
+   files, runs the converter tests and TypeScript checks, and builds the site.
+4. Commit the workbook and generated JSON together, then push. Netlify runs the
    converter again before every deployment.
 
 The `Game ID` column is the stable application identifier. Add one for a new
@@ -66,11 +65,9 @@ app after regeneration.
 
 Useful commands:
 
-- `npm run data:build` validates XLSX and writes JSON.
-- `npm run data:check` validates XLSX and fails if committed JSON is stale.
-- `npm run test:data` runs converter tests.
-- `npm run check` checks generated data and TypeScript.
-- `npm run build` regenerates data and creates the production site.
+- `npm run build` is the normal all-in-one local command.
+- `npm run dev` regenerates data and starts the local development server.
+- `npm run data:check` is the CI-oriented freshness check for committed JSON.
 
 GitHub Actions runs the data tests, freshness check, and production build on
 pull requests and pushes to `main`.
