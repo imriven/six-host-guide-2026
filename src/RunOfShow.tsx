@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import runOfShowData from "./generated/runOfShow.json";
 
-export type RunGame = { id: string; t: string; d: string; n: string };
+export type RunGame = { id: number; t: string; d: string; n: string };
 
 type Props = {
   games: RunGame[];
@@ -24,7 +24,7 @@ type GeneratedScheduleItem = {
   id: string;
   kind: ScheduleItem["kind"];
   segmentNumber: number | null;
-  gameId: string | null;
+  gameId: number | null;
   title: string;
   start: string;
   end: string;

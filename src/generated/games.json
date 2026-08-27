@@ -1,6 +1,6 @@
 [
   {
-    "id": "ascent-rivals",
+    "id": 1,
     "title": "Ascent Rivals",
     "developer": "GENUN Games",
     "platforms": [
@@ -22,7 +22,7 @@
     "mediaFolder": "ascentrivals"
   },
   {
-    "id": "breach-of-contract",
+    "id": 2,
     "title": "Breach Of Contract",
     "developer": "Fern Sprout Studios",
     "platforms": [
@@ -43,7 +43,7 @@
     "mediaFolder": "breachofcontract"
   },
   {
-    "id": "broomsweeper",
+    "id": 3,
     "title": "BroomSweeper",
     "developer": "BandWidth Games",
     "platforms": [
@@ -65,7 +65,7 @@
     "mediaFolder": "broomsweeper"
   },
   {
-    "id": "cooking-fist",
+    "id": 4,
     "title": "Cooking Fist",
     "developer": "Spaghetti Code LLC",
     "platforms": [
@@ -86,7 +86,7 @@
     "mediaFolder": "cookingfist"
   },
   {
-    "id": "creature-kitchen",
+    "id": 5,
     "title": "Creature Kitchen",
     "developer": "The Rat Zone",
     "platforms": [
@@ -108,7 +108,7 @@
     "mediaFolder": "creaturekitchen"
   },
   {
-    "id": "desolus",
+    "id": 6,
     "title": "Desolus",
     "developer": "Mark J. Mayers",
     "platforms": [
@@ -136,7 +136,7 @@
     "mediaFolder": "desolus"
   },
   {
-    "id": "diabolocracy",
+    "id": 7,
     "title": "Diabolocracy",
     "developer": "Chaos Gremlin Games",
     "platforms": [
@@ -158,7 +158,7 @@
     "mediaFolder": "diabolocracy"
   },
   {
-    "id": "dig-too-deep",
+    "id": 8,
     "title": "Dig Too Deep",
     "developer": "Punch Up Games",
     "platforms": [
@@ -180,7 +180,7 @@
     "mediaFolder": "digtoodeep"
   },
   {
-    "id": "dittori",
+    "id": 9,
     "title": "Dittori",
     "developer": "Blookerstein",
     "platforms": [
@@ -202,7 +202,7 @@
     "mediaFolder": "dittori"
   },
   {
-    "id": "dungeon-bodega-simulator",
+    "id": 10,
     "title": "Dungeon Bodega Simulator",
     "developer": "Alien Fruit Games",
     "platforms": [
@@ -225,7 +225,7 @@
     "mediaFolder": "dungeonbodegasimulator"
   },
   {
-    "id": "end-of-garbage",
+    "id": 11,
     "title": "End of Garbage",
     "developer": "Joshua Rosen (Rakelock LLC)",
     "platforms": [
@@ -248,7 +248,7 @@
     "mediaFolder": "endofgarbage"
   },
   {
-    "id": "fairy-circle",
+    "id": 12,
     "title": "Fairy Circle",
     "developer": "Play Hooky",
     "platforms": [
@@ -270,7 +270,7 @@
     "mediaFolder": "fairycircle"
   },
   {
-    "id": "feeding-gooble",
+    "id": 13,
     "title": "Feeding Gooble",
     "developer": "Displacer Labs",
     "platforms": [
@@ -291,7 +291,7 @@
     "mediaFolder": "feedinggooble"
   },
   {
-    "id": "gravity-goblins",
+    "id": 14,
     "title": "Gravity Goblins",
     "developer": "The Rat Zone",
     "platforms": [
@@ -313,7 +313,7 @@
     "mediaFolder": "gravitygoblins"
   },
   {
-    "id": "hamsteria",
+    "id": 15,
     "title": "Hamsteria",
     "developer": "2WheelerDev",
     "platforms": [
@@ -336,7 +336,7 @@
     "mediaFolder": "hamsteria"
   },
   {
-    "id": "haunted-heist",
+    "id": 16,
     "title": "Haunted Heist",
     "developer": "autotroph games",
     "platforms": [
@@ -359,7 +359,7 @@
     "mediaFolder": "hauntedheist"
   },
   {
-    "id": "hit-haunted",
+    "id": 17,
     "title": "Hit & Haunted",
     "developer": "Amnesiac Ghost",
     "platforms": [
@@ -381,7 +381,7 @@
     "mediaFolder": "hithaunted"
   },
   {
-    "id": "hogen",
+    "id": 18,
     "title": "Hogen",
     "developer": "Scrappyard Games",
     "platforms": [
@@ -403,7 +403,7 @@
     "mediaFolder": "hogen"
   },
   {
-    "id": "hyperfist",
+    "id": 19,
     "title": "HYPERFIST",
     "developer": "Chirality",
     "platforms": [
@@ -425,7 +425,7 @@
     "mediaFolder": "hyperfist"
   },
   {
-    "id": "killing-baby-hitler",
+    "id": 20,
     "title": "Killing Baby Hitler",
     "developer": "The Coffee Industrial Complex",
     "platforms": [
@@ -447,7 +447,7 @@
     "mediaFolder": "killingbabyhitler"
   },
   {
-    "id": "knockout-2-wrath-of-the-karen",
+    "id": 21,
     "title": "Knockout 2: Wrath of the Karen",
     "developer": "ExceptioNULL Games",
     "platforms": [
@@ -471,7 +471,7 @@
     "mediaFolder": "knockout2wrathofthekaren"
   },
   {
-    "id": "malice-in-wonderland",
+    "id": 22,
     "title": "Malice In Wonderland",
     "developer": "Slyglass Games",
     "platforms": [
@@ -492,7 +492,7 @@
     "mediaFolder": "maliceinwonderland"
   },
   {
-    "id": "manafinder-ii",
+    "id": 23,
     "title": "Manafinder II",
     "developer": "Wolfsden LLC",
     "platforms": [
@@ -513,7 +513,7 @@
     "mediaFolder": "manafinderii"
   },
   {
-    "id": "myriorama",
+    "id": 24,
     "title": "MYRIORAMA",
     "developer": "J&K Games",
     "platforms": [
@@ -534,7 +534,7 @@
     "mediaFolder": "myriorama"
   },
   {
-    "id": "nightmare-kitchen",
+    "id": 25,
     "title": "Nightmare Kitchen",
     "developer": "Byteback Studios",
     "platforms": [
@@ -555,7 +555,7 @@
     "mediaFolder": "nightmarekitchen"
   },
   {
-    "id": "nimbit-frontier",
+    "id": 26,
     "title": "Nimbit Frontier",
     "developer": "Megasploot",
     "platforms": [
@@ -577,7 +577,7 @@
     "mediaFolder": "nimbitfrontier"
   },
   {
-    "id": "rune-gunner",
+    "id": 27,
     "title": "RUNE GUNNER",
     "developer": "False Summit",
     "platforms": [
@@ -599,7 +599,7 @@
     "mediaFolder": "runegunner"
   },
   {
-    "id": "scp-antimemetics-division",
+    "id": 28,
     "title": "SCP: Antimemetics Division",
     "developer": "Quadrant Five",
     "platforms": [
@@ -621,7 +621,7 @@
     "mediaFolder": "scpantimemeticsdivision"
   },
   {
-    "id": "seedborne-soldiers",
+    "id": 29,
     "title": "Seedborne Soldiers",
     "developer": "Hat Wobble Games",
     "platforms": [
@@ -643,7 +643,7 @@
     "mediaFolder": "seedbornesoldiers"
   },
   {
-    "id": "shroomwood",
+    "id": 30,
     "title": "Shroomwood",
     "developer": "Sporelite Games",
     "platforms": [
@@ -667,7 +667,7 @@
     "mediaFolder": "Martin%20Hundrup"
   },
   {
-    "id": "steel-swarm-survivor",
+    "id": 31,
     "title": "Steel Swarm: SURVIVOR",
     "developer": "Clay Token Game Studio, Inc.",
     "platforms": [
@@ -690,7 +690,7 @@
     "mediaFolder": "steelswarmsurvivor"
   },
   {
-    "id": "super-choppy",
+    "id": 32,
     "title": "Super Choppy",
     "developer": "Sumoshell Bombfunk",
     "platforms": [
@@ -714,7 +714,7 @@
     "mediaFolder": "superchoppy"
   },
   {
-    "id": "telera",
+    "id": 33,
     "title": "Telera",
     "developer": "Entropico",
     "platforms": [
@@ -736,7 +736,7 @@
     "mediaFolder": "telera"
   },
   {
-    "id": "the-assessment",
+    "id": 34,
     "title": "The Assessment",
     "developer": "Miga Games",
     "platforms": [
@@ -758,7 +758,7 @@
     "mediaFolder": "theassessment"
   },
   {
-    "id": "tileshire",
+    "id": 35,
     "title": "TileShire",
     "developer": "Boss Blob",
     "platforms": [
@@ -781,7 +781,7 @@
     "mediaFolder": "tileshire"
   },
   {
-    "id": "tower-lab",
+    "id": 36,
     "title": "Tower Lab",
     "developer": "Play Tug Studio",
     "platforms": [
@@ -803,7 +803,7 @@
     "mediaFolder": "towerlab"
   },
   {
-    "id": "tricky-and-the-dream-caster",
+    "id": 37,
     "title": "Tricky and the Dream Caster",
     "developer": "PossQueen",
     "platforms": [
@@ -825,7 +825,7 @@
     "mediaFolder": "trickyandthedreamcaster"
   },
   {
-    "id": "turning-manor",
+    "id": 38,
     "title": "Turning Manor",
     "developer": "Sabbatical Games",
     "platforms": [
@@ -847,7 +847,7 @@
     "mediaFolder": "turningmanor"
   },
   {
-    "id": "we-need-an-army",
+    "id": 39,
     "title": "We Need An Army",
     "developer": "Elder Bear Games",
     "platforms": [
@@ -869,7 +869,7 @@
     "mediaFolder": "weneedanarmy"
   },
   {
-    "id": "will-follow-the-light",
+    "id": 40,
     "title": "WILL: Follow The Light",
     "developer": "TomorrowHead Studio",
     "platforms": [
@@ -893,7 +893,7 @@
     "mediaFolder": "Roman%20Novikov"
   },
   {
-    "id": "wrestle-story",
+    "id": 41,
     "title": "Wrestle Story",
     "developer": "Tic Toc Games",
     "platforms": [

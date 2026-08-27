@@ -53,6 +53,7 @@ RUN_HEADERS = [
     "END",
     "HOSTS",
     "PRODUCTION NOTES",
+    "GAME ID",
 ]
 AVAILABILITY = {"Released", "Not yet released"}
 
@@ -210,9 +211,13 @@ def validate_games(records: list[dict[str, str]]) -> list[dict[str, object]]:
         for header in required:
             if not record[header]:
                 errors.append(f"{location}: {header} is required")
-        game_id = record["Game ID"]
-        if game_id and not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", game_id):
-            errors.append(f"{location}: Game ID must be lowercase kebab-case")
+        game_id_text = record["Game ID"]
+        game_id = 0
+        if game_id_text:
+            if re.fullmatch(r"[1-9][0-9]*", game_id_text):
+                game_id = int(game_id_text)
+            else:
+                errors.append(f"{location}: Game ID must be a positive integer")
         if record["Availability"] not in AVAILABILITY:
             errors.append(
                 f"{location}: Availability must be one of {', '.join(sorted(AVAILABILITY))}"
@@ -258,20 +263,27 @@ def validate_games(records: list[dict[str, str]]) -> list[dict[str, object]]:
     return games
 
 
-def schedule_kind(title: str, segment: str, game_titles: set[str]) -> str:
-    if title in game_titles:
-        return "game"
+def schedule_kind(title: str, segment: str, game_id: str) -> str:
+    non_game_kind: str | None = None
     if title == "Break / Transition":
-        return "transition"
-    if "Sponsor Ad Read" in title:
-        return "ad"
-    if title.startswith("Opening"):
-        return "intro"
-    if title.startswith("Closing"):
-        return "closing"
+        non_game_kind = "transition"
+    elif "Sponsor Ad Read" in title:
+        non_game_kind = "ad"
+    elif title.startswith("Opening"):
+        non_game_kind = "intro"
+    elif title.startswith("Closing"):
+        non_game_kind = "closing"
+    if non_game_kind:
+        if game_id:
+            raise WorkbookValidationError(
+                f"Run of Show non-game row {title!r} must not have a GAME ID"
+            )
+        return non_game_kind
+    if game_id:
+        return "game"
     if segment not in {"", "-"}:
         raise WorkbookValidationError(
-            f"Run of Show title {title!r} has a segment number but does not match a game"
+            f"Run of Show game row {title!r} requires a GAME ID"
         )
     raise WorkbookValidationError(f"Run of Show has an unknown row type: {title!r}")
 
@@ -279,8 +291,8 @@ def schedule_kind(title: str, segment: str, game_titles: set[str]) -> str:
 def validate_schedule(
     records: list[dict[str, str]], games: list[dict[str, object]]
 ) -> list[dict[str, object]]:
-    game_id_by_title = {str(game["title"]): str(game["id"]) for game in games}
-    game_ids = {str(game["id"]) for game in games}
+    games_by_id = {int(game["id"]): game for game in games}
+    game_ids = set(games_by_id)
     kind_counts: Counter[str] = Counter()
     schedule: list[dict[str, object]] = []
     errors: list[str] = []
@@ -290,8 +302,15 @@ def validate_schedule(
         if not title:
             errors.append(f"{location}: GAME / BREAK is required")
             continue
+        game_id_text = record["GAME ID"]
+        game_id: int | None = None
+        if game_id_text:
+            if not re.fullmatch(r"[1-9][0-9]*", game_id_text):
+                errors.append(f"{location}: GAME ID must be a positive integer")
+                continue
+            game_id = int(game_id_text)
         try:
-            kind = schedule_kind(title, record["SEG"], set(game_id_by_title))
+            kind = schedule_kind(title, record["SEG"], game_id_text)
             start = normalize_time(record["START"], f"{location} START")
             end = normalize_time(record["END"], f"{location} END")
         except WorkbookValidationError as exc:
@@ -306,8 +325,10 @@ def validate_schedule(
                 segment_number = int(float(segment_text))
             except ValueError:
                 errors.append(f"{location}: SEG must be a whole number or '-' ")
+        if kind == "game" and game_id not in games_by_id:
+            errors.append(f"{location}: GAME ID {game_id} does not exist on {GAME_SHEET}")
+            continue
         kind_counts[kind] += 1
-        game_id = game_id_by_title.get(title) if kind == "game" else None
         item_id = f"{kind}-{game_id or kind_counts[kind]}"
         schedule.append(
             {
@@ -324,15 +345,15 @@ def validate_schedule(
             }
         )
 
-    scheduled_game_ids = [str(item["gameId"]) for item in schedule if item["gameId"]]
+    scheduled_game_ids = [int(item["gameId"]) for item in schedule if item["gameId"]]
     missing = sorted(game_ids - set(scheduled_game_ids))
     duplicates = sorted(
         game_id for game_id, count in Counter(scheduled_game_ids).items() if count > 1
     )
     if missing:
-        errors.append(f"Games missing from Run of Show: {', '.join(missing)}")
+        errors.append(f"Games missing from Run of Show: {', '.join(map(str, missing))}")
     if duplicates:
-        errors.append(f"Games scheduled more than once: {', '.join(duplicates)}")
+        errors.append(f"Games scheduled more than once: {', '.join(map(str, duplicates))}")
     if kind_counts["intro"] != 1 or kind_counts["closing"] != 1:
         errors.append("Run of Show must contain exactly one opening and one closing row")
     if errors:

@@ -26,10 +26,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-ascent-rivals",
+      "id": "game-1",
       "kind": "game",
       "segmentNumber": 2,
-      "gameId": "ascent-rivals",
+      "gameId": 1,
       "title": "Ascent Rivals",
       "developer": "GENUN Games",
       "start": "10:07 AM",
@@ -50,10 +50,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-breach-of-contract",
+      "id": "game-2",
       "kind": "game",
       "segmentNumber": 3,
-      "gameId": "breach-of-contract",
+      "gameId": 2,
       "title": "Breach Of Contract",
       "developer": "Fern Sprout Studios",
       "start": "10:15 AM",
@@ -74,10 +74,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-broomsweeper",
+      "id": "game-3",
       "kind": "game",
       "segmentNumber": 4,
-      "gameId": "broomsweeper",
+      "gameId": 3,
       "title": "BroomSweeper",
       "developer": "BandWidth Games",
       "start": "10:23 AM",
@@ -98,10 +98,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-cooking-fist",
+      "id": "game-4",
       "kind": "game",
       "segmentNumber": 5,
-      "gameId": "cooking-fist",
+      "gameId": 4,
       "title": "Cooking Fist",
       "developer": "Spaghetti Code LLC",
       "start": "10:31 AM",
@@ -122,10 +122,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-creature-kitchen",
+      "id": "game-5",
       "kind": "game",
       "segmentNumber": 6,
-      "gameId": "creature-kitchen",
+      "gameId": 5,
       "title": "Creature Kitchen",
       "developer": "The Rat Zone",
       "start": "10:39 AM",
@@ -146,10 +146,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-desolus",
+      "id": "game-6",
       "kind": "game",
       "segmentNumber": 7,
-      "gameId": "desolus",
+      "gameId": 6,
       "title": "Desolus",
       "developer": "Mark J. Mayers",
       "start": "10:47 AM",
@@ -170,10 +170,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-diabolocracy",
+      "id": "game-7",
       "kind": "game",
       "segmentNumber": 8,
-      "gameId": "diabolocracy",
+      "gameId": 7,
       "title": "Diabolocracy",
       "developer": "Chaos Gremlin Games",
       "start": "10:55 AM",
@@ -206,10 +206,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-dig-too-deep",
+      "id": "game-8",
       "kind": "game",
       "segmentNumber": 9,
-      "gameId": "dig-too-deep",
+      "gameId": 8,
       "title": "Dig Too Deep",
       "developer": "Punch Up Games",
       "start": "11:05 AM",
@@ -230,10 +230,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-dittori",
+      "id": "game-9",
       "kind": "game",
       "segmentNumber": 10,
-      "gameId": "dittori",
+      "gameId": 9,
       "title": "Dittori",
       "developer": "Blookerstein",
       "start": "11:13 AM",
@@ -254,10 +254,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-dungeon-bodega-simulator",
+      "id": "game-10",
       "kind": "game",
       "segmentNumber": 11,
-      "gameId": "dungeon-bodega-simulator",
+      "gameId": 10,
       "title": "Dungeon Bodega Simulator",
       "developer": "Alien Fruit Games",
       "start": "11:21 AM",
@@ -278,10 +278,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-end-of-garbage",
+      "id": "game-11",
       "kind": "game",
       "segmentNumber": 12,
-      "gameId": "end-of-garbage",
+      "gameId": 11,
       "title": "End of Garbage",
       "developer": "Joshua Rosen (Rakelock LLC)",
       "start": "11:29 AM",
@@ -302,10 +302,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-fairy-circle",
+      "id": "game-12",
       "kind": "game",
       "segmentNumber": 13,
-      "gameId": "fairy-circle",
+      "gameId": 12,
       "title": "Fairy Circle",
       "developer": "Play Hooky",
       "start": "11:37 AM",
@@ -326,10 +326,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-feeding-gooble",
+      "id": "game-13",
       "kind": "game",
       "segmentNumber": 14,
-      "gameId": "feeding-gooble",
+      "gameId": 13,
       "title": "Feeding Gooble",
       "developer": "Displacer Labs",
       "start": "11:45 AM",
@@ -350,10 +350,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-gravity-goblins",
+      "id": "game-14",
       "kind": "game",
       "segmentNumber": 15,
-      "gameId": "gravity-goblins",
+      "gameId": 14,
       "title": "Gravity Goblins",
       "developer": "The Rat Zone",
       "start": "11:53 AM",
@@ -374,10 +374,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-hamsteria",
+      "id": "game-15",
       "kind": "game",
       "segmentNumber": 16,
-      "gameId": "hamsteria",
+      "gameId": 15,
       "title": "Hamsteria",
       "developer": "2WheelerDev",
       "start": "12:01 PM",
@@ -410,10 +410,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-haunted-heist",
+      "id": "game-16",
       "kind": "game",
       "segmentNumber": 17,
-      "gameId": "haunted-heist",
+      "gameId": 16,
       "title": "Haunted Heist",
       "developer": "autotroph games",
       "start": "12:11 PM",
@@ -434,10 +434,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-hogen",
+      "id": "game-18",
       "kind": "game",
       "segmentNumber": 18,
-      "gameId": "hogen",
+      "gameId": 18,
       "title": "Hogen",
       "developer": "Scrappyard Games",
       "start": "12:19 PM",
@@ -458,10 +458,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-hyperfist",
+      "id": "game-19",
       "kind": "game",
       "segmentNumber": 19,
-      "gameId": "hyperfist",
+      "gameId": 19,
       "title": "HYPERFIST",
       "developer": "Chirality",
       "start": "12:27 PM",
@@ -482,10 +482,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-killing-baby-hitler",
+      "id": "game-20",
       "kind": "game",
       "segmentNumber": 20,
-      "gameId": "killing-baby-hitler",
+      "gameId": 20,
       "title": "Killing Baby Hitler",
       "developer": "The Coffee Industrial Complex",
       "start": "12:35 PM",
@@ -506,10 +506,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-knockout-2-wrath-of-the-karen",
+      "id": "game-21",
       "kind": "game",
       "segmentNumber": 21,
-      "gameId": "knockout-2-wrath-of-the-karen",
+      "gameId": 21,
       "title": "Knockout 2: Wrath of the Karen",
       "developer": "ExceptioNULL Games",
       "start": "12:43 PM",
@@ -530,10 +530,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-malice-in-wonderland",
+      "id": "game-22",
       "kind": "game",
       "segmentNumber": 22,
-      "gameId": "malice-in-wonderland",
+      "gameId": 22,
       "title": "Malice In Wonderland",
       "developer": "Slyglass Games",
       "start": "12:51 PM",
@@ -554,10 +554,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-manafinder-ii",
+      "id": "game-23",
       "kind": "game",
       "segmentNumber": 23,
-      "gameId": "manafinder-ii",
+      "gameId": 23,
       "title": "Manafinder II",
       "developer": "Wolfsden LLC",
       "start": "12:59 PM",
@@ -590,10 +590,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-myriorama",
+      "id": "game-24",
       "kind": "game",
       "segmentNumber": 24,
-      "gameId": "myriorama",
+      "gameId": 24,
       "title": "MYRIORAMA",
       "developer": "J&K Games",
       "start": "1:09 PM",
@@ -614,10 +614,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-nightmare-kitchen",
+      "id": "game-25",
       "kind": "game",
       "segmentNumber": 25,
-      "gameId": "nightmare-kitchen",
+      "gameId": 25,
       "title": "Nightmare Kitchen",
       "developer": "Byteback Studios",
       "start": "1:17 PM",
@@ -638,10 +638,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-nimbit-frontier",
+      "id": "game-26",
       "kind": "game",
       "segmentNumber": 26,
-      "gameId": "nimbit-frontier",
+      "gameId": 26,
       "title": "Nimbit Frontier",
       "developer": "Megasploot",
       "start": "1:25 PM",
@@ -662,10 +662,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-rune-gunner",
+      "id": "game-27",
       "kind": "game",
       "segmentNumber": 27,
-      "gameId": "rune-gunner",
+      "gameId": 27,
       "title": "RUNE GUNNER",
       "developer": "False Summit",
       "start": "1:33 PM",
@@ -686,10 +686,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-scp-antimemetics-division",
+      "id": "game-28",
       "kind": "game",
       "segmentNumber": 28,
-      "gameId": "scp-antimemetics-division",
+      "gameId": 28,
       "title": "SCP: Antimemetics Division",
       "developer": "Quadrant Five",
       "start": "1:41 PM",
@@ -710,10 +710,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-seedborne-soldiers",
+      "id": "game-29",
       "kind": "game",
       "segmentNumber": 29,
-      "gameId": "seedborne-soldiers",
+      "gameId": 29,
       "title": "Seedborne Soldiers",
       "developer": "Hat Wobble Games",
       "start": "1:49 PM",
@@ -734,10 +734,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-shroomwood",
+      "id": "game-30",
       "kind": "game",
       "segmentNumber": 30,
-      "gameId": "shroomwood",
+      "gameId": 30,
       "title": "Shroomwood",
       "developer": "Sporelite Games",
       "start": "1:57 PM",
@@ -770,10 +770,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-steel-swarm-survivor",
+      "id": "game-31",
       "kind": "game",
       "segmentNumber": 31,
-      "gameId": "steel-swarm-survivor",
+      "gameId": 31,
       "title": "Steel Swarm: SURVIVOR",
       "developer": "Clay Token Game Studio, Inc.",
       "start": "2:07 PM",
@@ -794,10 +794,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-super-choppy",
+      "id": "game-32",
       "kind": "game",
       "segmentNumber": 32,
-      "gameId": "super-choppy",
+      "gameId": 32,
       "title": "Super Choppy",
       "developer": "Sumoshell Bombfunk",
       "start": "2:15 PM",
@@ -818,10 +818,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-telera",
+      "id": "game-33",
       "kind": "game",
       "segmentNumber": 33,
-      "gameId": "telera",
+      "gameId": 33,
       "title": "Telera",
       "developer": "Entropico",
       "start": "2:23 PM",
@@ -842,10 +842,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-the-assessment",
+      "id": "game-34",
       "kind": "game",
       "segmentNumber": 34,
-      "gameId": "the-assessment",
+      "gameId": 34,
       "title": "The Assessment",
       "developer": "Miga Games",
       "start": "2:31 PM",
@@ -866,10 +866,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-tileshire",
+      "id": "game-35",
       "kind": "game",
       "segmentNumber": 35,
-      "gameId": "tileshire",
+      "gameId": 35,
       "title": "TileShire",
       "developer": "Boss Blob",
       "start": "2:39 PM",
@@ -890,10 +890,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-tower-lab",
+      "id": "game-36",
       "kind": "game",
       "segmentNumber": 36,
-      "gameId": "tower-lab",
+      "gameId": 36,
       "title": "Tower Lab",
       "developer": "Play Tug Studio",
       "start": "2:47 PM",
@@ -914,10 +914,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-tricky-and-the-dream-caster",
+      "id": "game-37",
       "kind": "game",
       "segmentNumber": 37,
-      "gameId": "tricky-and-the-dream-caster",
+      "gameId": 37,
       "title": "Tricky and the Dream Caster",
       "developer": "PossQueen",
       "start": "2:55 PM",
@@ -950,10 +950,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-turning-manor",
+      "id": "game-38",
       "kind": "game",
       "segmentNumber": 38,
-      "gameId": "turning-manor",
+      "gameId": 38,
       "title": "Turning Manor",
       "developer": "Sabbatical Games",
       "start": "3:05 PM",
@@ -974,10 +974,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-we-need-an-army",
+      "id": "game-39",
       "kind": "game",
       "segmentNumber": 39,
-      "gameId": "we-need-an-army",
+      "gameId": 39,
       "title": "We Need An Army",
       "developer": "Elder Bear Games",
       "start": "3:13 PM",
@@ -998,10 +998,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-will-follow-the-light",
+      "id": "game-40",
       "kind": "game",
       "segmentNumber": 40,
-      "gameId": "will-follow-the-light",
+      "gameId": 40,
       "title": "WILL: Follow The Light",
       "developer": "TomorrowHead Studio",
       "start": "3:21 PM",
@@ -1022,10 +1022,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-wrestle-story",
+      "id": "game-41",
       "kind": "game",
       "segmentNumber": 41,
-      "gameId": "wrestle-story",
+      "gameId": 41,
       "title": "Wrestle Story",
       "developer": "Tic Toc Games",
       "start": "3:29 PM",
@@ -1046,10 +1046,10 @@
       "productionNotes": ""
     },
     {
-      "id": "game-hit-haunted",
+      "id": "game-17",
       "kind": "game",
       "segmentNumber": 42,
-      "gameId": "hit-haunted",
+      "gameId": 17,
       "title": "Hit & Haunted",
       "developer": "Amnesiac Ghost",
       "start": "3:37 PM",

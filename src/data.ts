@@ -3,7 +3,7 @@ import gameData from "./generated/games.json";
 export type Availability = "Released" | "Not yet released";
 
 type GeneratedGame = {
-  id: string;
+  id: number;
   title: string;
   developer: string;
   platforms: string[];
@@ -21,7 +21,7 @@ type GeneratedGame = {
 };
 
 export type Game = {
-  id: string;
+  id: number;
   t: string;
   d: string;
   p: string[];

@@ -50,11 +50,16 @@ no Python packages to install.
 4. Commit the workbook and generated JSON together, then push. Netlify runs the
    converter again before every deployment.
 
-The `Game ID` column is the stable application identifier. Add one for a new
-game using lowercase kebab-case, but do not change an existing ID when a game
-name changes. Each game title in `Run of Show` must exactly match a `Name` on
-the `descriptions` worksheet; validation reports the worksheet row when data
-is missing or invalid.
+The `Game ID` column is the stable application identifier and the relationship
+between worksheets. Assign a new positive integer when adding a game, then
+never change, reuse, or renumber it. It is not a row number or run-of-show
+segment number. A game's display names may change independently on the two
+worksheets without breaking the relationship; validation reports the worksheet
+row when an ID is missing or invalid.
+
+For the production-friendly layout, `Run of Show` keeps `GAME ID` in hidden
+column H. Unhide that column when adding or changing a game segment, then enter
+the integer from the matching `descriptions` row. Non-game rows leave it blank.
 
 On `descriptions`, `Platforms` preserves the complete platform list while
 `Display Platforms` controls the app's filter chips. `Availability` must be
