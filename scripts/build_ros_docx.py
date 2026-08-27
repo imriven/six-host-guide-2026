@@ -1,5 +1,6 @@
-import json
 from pathlib import Path
+
+from xlsx_to_json import load_workbook_data
 
 from docx import Document
 from docx.enum.section import WD_ORIENT
@@ -10,7 +11,20 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[1]
-rows = json.loads((ROOT / "tmp" / "approved_run_of_show.json").read_text())
+_, generated_run_of_show = load_workbook_data()
+rows = [
+    {
+        "kind": str(item["kind"]).title(),
+        "segment": str(item["segmentNumber"] or ""),
+        "start": str(item["start"]),
+        "end": str(item["end"]),
+        "hosts": str(item["hosts"]),
+        "title": str(item["title"]),
+        "developer": str(item["developer"]),
+        "notes": str(item["productionNotes"]),
+    }
+    for item in generated_run_of_show["items"]
+]
 output = ROOT / "public" / "SIX-2026-Run-of-Show.docx"
 
 def shade(cell, fill):
@@ -46,7 +60,7 @@ subtitle = doc.add_paragraph()
 subtitle.paragraph_format.space_after = Pt(4)
 run = subtitle.add_run("Run of Show - Rough Draft")
 run.font.name = "Arial"; run.font.size = Pt(10); run.bold = True; run.font.color.rgb = RGBColor(214, 69, 36)
-hosts = doc.add_paragraph("Host A = TBD   |   Host B = TBD   |   Host C = TBD   |   Host D = TBD   |   Host E = TBD   |   Host F = TBD")
+hosts = doc.add_paragraph(str(generated_run_of_show["hostNote"]).replace(" | ", "   |   "))
 hosts.paragraph_format.space_after = Pt(7)
 hosts.runs[0].font.name = "Arial"; hosts.runs[0].font.size = Pt(8)
 
@@ -62,7 +76,7 @@ table.rows[0]._tr.get_or_add_trPr().append(OxmlElement("w:tblHeader"))
 
 for row in rows:
     cells = table.add_row().cells
-    values = [row["segment"] or "-", row["title"], row["developer"], row["start"], row["end"], row["hosts"], ""]
+    values = [row["segment"] or "-", row["title"], row["developer"], row["start"], row["end"], row["hosts"], row["notes"]]
     for index, value in enumerate(values):
         is_title = index == 1
         write_cell(cells[index], value,

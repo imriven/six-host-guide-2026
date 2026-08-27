@@ -4,8 +4,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "data:build": "python scripts/xlsx_to_json.py",
+    "data:check": "python scripts/xlsx_to_json.py --check",
+    "test:data": "python -m unittest discover -s scripts -p test_*.py -v",
+    "check": "npm run data:check && tsc -b",
+    "dev": "npm run data:build && vite",
+    "build": "npm run data:build && tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

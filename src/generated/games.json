@@ -1,0 +1,917 @@
+[
+  {
+    "id": "ascent-rivals",
+    "title": "Ascent Rivals",
+    "developer": "GENUN Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "Q4 2026",
+    "demo": "NA",
+    "overview": "Competitive multiplayer racing blending driving, combat, ship upgrades, and four tactical heats.",
+    "description": "A competitive multiplayer racing game that combines high-speed driving, ship-to-ship combat, and vehicle customization. Four heats give racers opportunities to earn currency through placement, eliminations, and objectives, then improve their ships between rounds. Success depends on mechanical skill, tactical decisions, and adapting in multiplayer or time trials.",
+    "officialUrl": "https://www.ascentrivals.com/",
+    "steamAppId": "2748420",
+    "youtubeVideoId": "lQkBSUMFlnk",
+    "mediaSlug": "ascentrivals",
+    "mediaFolder": "ascentrivals"
+  },
+  {
+    "id": "breach-of-contract",
+    "title": "Breach Of Contract",
+    "developer": "Fern Sprout Studios",
+    "platforms": [
+      "PC"
+    ],
+    "displayPlatforms": [
+      "itch.io"
+    ],
+    "availability": "Released",
+    "release": "June 20, 2026",
+    "demo": "Beta on itch.io",
+    "overview": "Fast tactical action: plan each breach, wield eldritch powers, and eliminate enemies to recharge.",
+    "description": "A fast tactical action game built around planning a breach and then surviving the chaos that follows. Players study each room, choose an approach, and use strange eldritch abilities against the enemies inside. Eliminations restore energy, encouraging an aggressive rhythm once the plan goes into motion.",
+    "officialUrl": "https://fern-sprout-studios.itch.io/breach-of-contract",
+    "steamAppId": null,
+    "youtubeVideoId": "D8xRftvI5iU",
+    "mediaSlug": "breachofcontract",
+    "mediaFolder": "breachofcontract"
+  },
+  {
+    "id": "broomsweeper",
+    "title": "BroomSweeper",
+    "developer": "BandWidth Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Released",
+    "release": "January 19, 2026",
+    "demo": "Demo available on Steam",
+    "overview": "Minesweeper gone roguelike, with 150+ items, dust bunnies, and 16 floors of janitorial danger.",
+    "description": "A roguelike spin on Minesweeper in which players stock a cleaning cart with more than 150 useful items while dealing with troublesome Dust Bunnies. Sixteen floors of Tentateq Tower stand between the player and the end of the shift, including seven hazardous materials that alter the familiar logic rules.",
+    "officialUrl": null,
+    "steamAppId": "3473250",
+    "youtubeVideoId": "JCCfUywh9iY",
+    "mediaSlug": "broomsweeper",
+    "mediaFolder": "broomsweeper"
+  },
+  {
+    "id": "cooking-fist",
+    "title": "Cooking Fist",
+    "developer": "Spaghetti Code LLC",
+    "platforms": [
+      "PC"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "To be announced",
+    "demo": "NA",
+    "overview": "A cooking fighting game with no health bars—fight for ingredients, pause to cook, and win by making the most food.",
+    "description": "A cooking-focused fighting game without traditional health bars. Players battle over ingredients, but collecting three forces them to pause the fight and cook. Victory goes to the competitor who manages the brawl, ingredient gathering, and cooking windows well enough to produce the most food.",
+    "officialUrl": "https://cookingfist.com/",
+    "steamAppId": "3941360",
+    "youtubeVideoId": "oxuyE_pWvXw",
+    "mediaSlug": "cookingfist",
+    "mediaFolder": "cookingfist"
+  },
+  {
+    "id": "creature-kitchen",
+    "title": "Creature Kitchen",
+    "developer": "The Rat Zone",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Released",
+    "release": "February 6, 2026",
+    "demo": "Demo available on Steam and itch.io",
+    "overview": "A creepy-cozy cooking simulator about exploring a strange house and feeding local wildlife.",
+    "description": "A creepy-cozy cooking simulator about befriending wildlife and preparing their favorite snacks. Players search a strange house, explore the surrounding forest, and learn more about its unusual inhabitants as the witching hour approaches.",
+    "officialUrl": null,
+    "steamAppId": "3097300",
+    "youtubeVideoId": "3U8V5RcFSqs",
+    "mediaSlug": "creaturekitchen",
+    "mediaFolder": "creaturekitchen"
+  },
+  {
+    "id": "desolus",
+    "title": "Desolus",
+    "developer": "Mark J. Mayers",
+    "platforms": [
+      "PC",
+      "Steam",
+      "PS5",
+      "Switch 2",
+      "Xbox Series"
+    ],
+    "displayPlatforms": [
+      "Steam",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "availability": "Not yet released",
+    "release": "Q3 2026 / Steam lists coming soon",
+    "demo": "Demo available on Steam and Xbox",
+    "overview": "A Gothic first-person puzzle game about black holes, impossible architecture, and rebuilding a city across time.",
+    "description": "A first-person puzzle game set in a Gothic city fractured between its past and future. Players create and manipulate black holes to solve impossible, Escher-like spatial puzzles. Traveling through time allows damaged structures to become whole again and may offer a way to save the city from ruin.",
+    "officialUrl": "https://www.desolus.com",
+    "steamAppId": "1003460",
+    "youtubeVideoId": "HxfV0AvwSIs",
+    "mediaSlug": "desolus",
+    "mediaFolder": "desolus"
+  },
+  {
+    "id": "diabolocracy",
+    "title": "Diabolocracy",
+    "developer": "Chaos Gremlin Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "2027",
+    "demo": "No public demo listed",
+    "overview": "Hellish corporate politics become a roguelite turn-based tactics game starring a team of Sins.",
+    "description": "A roguelite turn-based tactics game where Hell's corporate bureaucracy runs on violence. Players assemble a team of Sins, fight for influence, endure meetings, and combine complementary abilities into powerful SIN-ergies. The goal is to complete a hostile takeover before the boss returns from vacation.",
+    "officialUrl": null,
+    "steamAppId": "4143850",
+    "youtubeVideoId": "xdvk8IQBGWI",
+    "mediaSlug": "diabolocracy",
+    "mediaFolder": "diabolocracy"
+  },
+  {
+    "id": "dig-too-deep",
+    "title": "Dig Too Deep",
+    "developer": "Punch Up Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "2026",
+    "demo": "Demo available on Steam",
+    "overview": "Throw goblins at every problem in an action tower-defense roguelite where minions are also ammunition.",
+    "description": "An action tower-defense roguelite where goblins solve nearly every problem. They mine scrap, build defenses, fight enemies, and can even be launched as ammunition. Players upgrade their goblin workforce and defend their troll against increasingly dangerous waves.",
+    "officialUrl": null,
+    "steamAppId": "4280850",
+    "youtubeVideoId": "JSwNG2A444M",
+    "mediaSlug": "digtoodeep",
+    "mediaFolder": "digtoodeep"
+  },
+  {
+    "id": "dittori",
+    "title": "Dittori",
+    "developer": "Blookerstein",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "To be announced",
+    "demo": "Demo available on Steam",
+    "overview": "A reality-breaking game with 200+ puzzles built around splitting objects into two linked copies.",
+    "description": "A puzzle adventure set beneath the world, where an awakening ancient god threatens everything. The player can split an object so it exists in two places at once, with every change to one copy affecting the other. More than 200 handcrafted puzzles explore the increasingly reality-breaking consequences of that power.",
+    "officialUrl": null,
+    "steamAppId": "4311980",
+    "youtubeVideoId": "0xXuZZ7F8Vs",
+    "mediaSlug": "dittori",
+    "mediaFolder": "dittori"
+  },
+  {
+    "id": "dungeon-bodega-simulator",
+    "title": "Dungeon Bodega Simulator",
+    "developer": "Alien Fruit Games",
+    "platforms": [
+      "PC",
+      "Linux",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Released",
+    "release": "March 23, 2026",
+    "demo": "Demo available on Steam",
+    "overview": "Grow crops, brew potions, forge weapons, serve customers, and investigate a dungeon mystery.",
+    "description": "A narrative-driven shop game about growing crops, brewing potions, and forging weapons for customers. Running the business is only part of the job, because a mystery connected to the nearby dungeon gradually demands investigation.",
+    "officialUrl": null,
+    "steamAppId": "3458180",
+    "youtubeVideoId": "Hpbdtqusk3c",
+    "mediaSlug": "dungeonbodegasimulator",
+    "mediaFolder": "dungeonbodegasimulator"
+  },
+  {
+    "id": "end-of-garbage",
+    "title": "End of Garbage",
+    "developer": "Joshua Rosen (Rakelock LLC)",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Released",
+    "release": "March 13, 2026",
+    "demo": "Demo available on Steam",
+    "overview": "A short first-person puzzle game about the dark surreality of endings, documents, bodies, and deduction.",
+    "description": "A short first-person puzzle game about the dark surrealism of endings. Players sign documents, identify bodies, observe the stars, and work through a sequence of deduction and logic puzzles that turn ordinary bureaucratic tasks into something stranger.",
+    "officialUrl": null,
+    "steamAppId": "4256210",
+    "youtubeVideoId": "Eh56--dqBK4",
+    "mediaSlug": "endofgarbage",
+    "mediaFolder": "endofgarbage"
+  },
+  {
+    "id": "fairy-circle",
+    "title": "Fairy Circle",
+    "developer": "Play Hooky",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Released",
+    "release": "March 26, 2026",
+    "demo": "Demo available on Steam",
+    "overview": "A bag-building roguelike where a Forest Keeper protects a fairytale home from the Gloom.",
+    "description": "A bag-building roguelike set in a fairytale world. As a Forest Keeper, the player builds a collection of useful pieces and abilities while protecting their home from an encroaching shadow force known as the Gloom.",
+    "officialUrl": null,
+    "steamAppId": "3962850",
+    "youtubeVideoId": "_QT6JHIRf1w",
+    "mediaSlug": "fairycircle",
+    "mediaFolder": "fairycircle"
+  },
+  {
+    "id": "feeding-gooble",
+    "title": "Feeding Gooble",
+    "developer": "Displacer Labs",
+    "platforms": [
+      "PC"
+    ],
+    "displayPlatforms": [
+      "itch.io"
+    ],
+    "availability": "Not yet released",
+    "release": "In development",
+    "demo": "No public download confirmed",
+    "overview": "A conveyor-belt roguelite about keeping Gooble fed while lab experiments complicate the test forever.",
+    "description": "A roguelite experiment in which the player has volunteered—whether they like it or not—to keep Gooble fed. Food travels through a belt system while other laboratory experiments complicate the test. Players must balance the required calories, push their luck, and discover combinations that create useful synergies.",
+    "officialUrl": null,
+    "steamAppId": null,
+    "youtubeVideoId": "za-kJSvx9vA",
+    "mediaSlug": "feedinggooble",
+    "mediaFolder": "feedinggooble"
+  },
+  {
+    "id": "gravity-goblins",
+    "title": "Gravity Goblins",
+    "developer": "The Rat Zone",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "2027",
+    "demo": "No public demo listed",
+    "overview": "A gravity-bending roguelite collectathon through an ever-shifting tower packed with coins and trinkets.",
+    "description": "A gravity-bending roguelite collectathon set inside an ever-changing tower. Players manipulate geometry, collect coins, gather upgrades and trinkets, and spend time at the local arcade. Reaching the top requires mastering the tower's shifting spaces and uncovering the secret hidden there.",
+    "officialUrl": null,
+    "steamAppId": "4102030",
+    "youtubeVideoId": "IUN1QLruuJ8",
+    "mediaSlug": "gravitygoblins",
+    "mediaFolder": "gravitygoblins"
+  },
+  {
+    "id": "hamsteria",
+    "title": "Hamsteria",
+    "developer": "2WheelerDev",
+    "platforms": [
+      "PC",
+      "Linux",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "Q1 2027",
+    "demo": "Demo available on Steam",
+    "overview": "A difficult two-player co-op game starring hamsters in attached wheels, with online, local, and solo play.",
+    "description": "A demanding cooperative game about two hamsters moving in attached wheels. It supports online co-op, local co-op, and a single-player option, turning coordination and momentum into the central challenge.",
+    "officialUrl": null,
+    "steamAppId": "4430020",
+    "youtubeVideoId": "8wjcCM3xKQM",
+    "mediaSlug": "hamsteria",
+    "mediaFolder": "hamsteria"
+  },
+  {
+    "id": "haunted-heist",
+    "title": "Haunted Heist",
+    "developer": "autotroph games",
+    "platforms": [
+      "PC",
+      "Linux",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "October 12, 2026",
+    "demo": "No public demo listed",
+    "overview": "A 3–10 player PvP horror party game: heisters steal gems while tricksters weaponize a procedural mansion.",
+    "description": "A round-based PvP horror party game for three to ten players. Heisters search a procedurally generated mansion for gems, while Tricksters deploy disruptive and dangerous abilities to frighten them, break their plans, and protect the haunted home.",
+    "officialUrl": null,
+    "steamAppId": "4024440",
+    "youtubeVideoId": "QM9Ztbm9EjQ",
+    "mediaSlug": "hauntedheist",
+    "mediaFolder": "hauntedheist"
+  },
+  {
+    "id": "hit-haunted",
+    "title": "Hit & Haunted",
+    "developer": "Amnesiac Ghost",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "To be announced",
+    "demo": "Demo available on Steam",
+    "overview": "A murder mystery where you play both the hitman and the victim’s ghost to uncover who ordered the hit.",
+    "description": "A top-down murder mystery told from both sides of the same killing. Players alternate between Ace, the hitman, and Eli, the victim's ghost. Their unlikely partnership must uncover who hired Ace and determine the motive behind the contract.",
+    "officialUrl": null,
+    "steamAppId": "3574060",
+    "youtubeVideoId": "eRlyPFMJ1qs",
+    "mediaSlug": "hithaunted",
+    "mediaFolder": "hithaunted"
+  },
+  {
+    "id": "hogen",
+    "title": "Hogen",
+    "developer": "Scrappyard Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Released",
+    "release": "April 2, 2025",
+    "demo": "Demo available on Steam",
+    "overview": "A grid-based card battler where you face Death, craft powerful builds, and uncover what lies behind the game.",
+    "description": "A grid-based card battler that begins after the player crosses to the other side and finds Death waiting with a deck. What initially appears to be a simple match may hide something deeper. Strategic positioning, carefully constructed builds, and powerful card combinations determine how far the player gets.",
+    "officialUrl": null,
+    "steamAppId": "3575520",
+    "youtubeVideoId": "gGKx2EghID8",
+    "mediaSlug": "hogen",
+    "mediaFolder": "hogen"
+  },
+  {
+    "id": "hyperfist",
+    "title": "HYPERFIST",
+    "developer": "Chirality",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Released",
+    "release": "July 10, 2026",
+    "demo": "No public demo listed",
+    "overview": "Comic-styled first-person action focused on fast, fluid punching, grabbing, and mecha-fist combat.",
+    "description": "A fast first-person melee action game presented with a comic-book style. Players control Heath, a local punk equipped with mechanical fists, and fight robotic enemies through a fluid combat system focused on punching, grabbing, and other close-range techniques.",
+    "officialUrl": null,
+    "steamAppId": "3689210",
+    "youtubeVideoId": "m-P1E2uCtbM",
+    "mediaSlug": "hyperfist",
+    "mediaFolder": "hyperfist"
+  },
+  {
+    "id": "killing-baby-hitler",
+    "title": "Killing Baby Hitler",
+    "developer": "The Coffee Industrial Complex",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "2027",
+    "demo": "Demo available on Steam and itch.io",
+    "overview": "A retro FPS through corrupted timelines using resistance art, grenades, dinosaurs, and a wicked guitar.",
+    "description": "A retro-inspired first-person shooter about repairing timelines corrupted after a time-travel experiment goes wrong. Players fight fascism across altered versions of history, recover banned art to inspire resistance, throw grenades, ride dinosaurs, and use an extremely loud guitar against Nazi enemies.",
+    "officialUrl": null,
+    "steamAppId": "3317230",
+    "youtubeVideoId": "p2ENhCALff0",
+    "mediaSlug": "killingbabyhitler",
+    "mediaFolder": "killingbabyhitler"
+  },
+  {
+    "id": "knockout-2-wrath-of-the-karen",
+    "title": "Knockout 2: Wrath of the Karen",
+    "developer": "ExceptioNULL Games",
+    "platforms": [
+      "PC",
+      "Steam",
+      "Mobile"
+    ],
+    "displayPlatforms": [
+      "Steam",
+      "Mobile"
+    ],
+    "availability": "Released",
+    "release": "In development",
+    "demo": "Not confirmed",
+    "overview": "A comedic boxing adventure where the Federal Boxing Investigations settles every argument in the ring.",
+    "description": "A comedic boxing adventure set in a world where disputes and laws are settled in the ring. The player joins the Federal Boxing Investigations and faces a rising threat to national security, the world, and—perhaps most importantly—the bureau's quarterly performance bonus.",
+    "officialUrl": null,
+    "steamAppId": "2349350",
+    "youtubeVideoId": "7qiAh0rK458",
+    "mediaSlug": "knockout2wrathofthekaren",
+    "mediaFolder": "knockout2wrathofthekaren"
+  },
+  {
+    "id": "malice-in-wonderland",
+    "title": "Malice In Wonderland",
+    "developer": "Slyglass Games",
+    "platforms": [
+      "PC"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "To be announced",
+    "demo": "Demo available on Steam",
+    "overview": "A fast action roguelike based on the original Wonderland stories, where time itself is your health.",
+    "description": "A fast action roguelike inspired by the original Wonderland stories. The player fights the Hatter while trapped in an endlessly repeating tea time, with remaining time replacing a conventional health bar. Taking damage shortens the clock, failure rewinds the run, and Decrees can combine with existing abilities to create destructive new builds.",
+    "officialUrl": null,
+    "steamAppId": "4552140",
+    "youtubeVideoId": "PYI_usmMim8",
+    "mediaSlug": "maliceinwonderland",
+    "mediaFolder": "maliceinwonderland"
+  },
+  {
+    "id": "manafinder-ii",
+    "title": "Manafinder II",
+    "developer": "Wolfsden LLC",
+    "platforms": [
+      "PC"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "Q1 2027",
+    "demo": "No public demo listed",
+    "overview": "A console-style turn-based RPG emphasizing party roles, weapon choices, and elemental affinities.",
+    "description": "A console-style role-playing game with turn-based battles emphasizing party roles, weapon choices, and elemental relationships. Players travel through varied locations including fungal wilderness, the Luperci town of Alba, and the human ruins of Cuauhtla while confronting beasts, the Purged, and other dangers.",
+    "officialUrl": null,
+    "steamAppId": "4568010",
+    "youtubeVideoId": "uR8CokKtDYw",
+    "mediaSlug": "manafinderii",
+    "mediaFolder": "manafinderii"
+  },
+  {
+    "id": "myriorama",
+    "title": "MYRIORAMA",
+    "developer": "J&K Games",
+    "platforms": [
+      "PC"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "Coming soon",
+    "demo": "No public demo listed",
+    "overview": "A stop-motion-styled top-down adventure where players rearrange dungeon rooms to solve puzzles.",
+    "description": "A top-down adventure inspired by classic 2D Zelda games, with dungeons that can be rearranged room by room. Moving the dungeon itself becomes the key to solving puzzles and navigating its challenges. Low-frame-rate animation and handcrafted-looking environments give the world the appearance of a living stop-motion diorama.",
+    "officialUrl": null,
+    "steamAppId": "4663150",
+    "youtubeVideoId": "ubZqNnt4tlo",
+    "mediaSlug": "myriorama",
+    "mediaFolder": "myriorama"
+  },
+  {
+    "id": "nightmare-kitchen",
+    "title": "Nightmare Kitchen",
+    "developer": "Byteback Studios",
+    "platforms": [
+      "PC"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "To be announced",
+    "demo": "No public demo listed",
+    "overview": "A co-op FPS roguelite where chefs fight monstrous food with ridiculous culinary weapons.",
+    "description": "A cooperative first-person roguelite where the food is trying to eat the chefs. Teams explore restaurant-themed dungeons, fight deranged culinary monsters, and wield absurd food-inspired weapons. Between runs, players improve their chefs and rebuild the food court at Tater Hills Mall in preparation for the Food-Pocalypse.",
+    "officialUrl": null,
+    "steamAppId": "3077140",
+    "youtubeVideoId": "VVkEj57OxVc",
+    "mediaSlug": "nightmarekitchen",
+    "mediaFolder": "nightmarekitchen"
+  },
+  {
+    "id": "nimbit-frontier",
+    "title": "Nimbit Frontier",
+    "developer": "Megasploot",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Released",
+    "release": "August 17, 2026",
+    "demo": "Demo available on Steam",
+    "overview": "A cozy creature-collecting life sim with detailed care, custom habitats, conservation, and roguelite expeditions.",
+    "description": "A cozy creature-collecting life simulation with detailed creature care and roguelite exploration. Players raise Nimbits, design comfortable habitats, and venture into the changing Underwild to find rare species. Nurturing, discovery, atmosphere, and conservation are central to the experience.",
+    "officialUrl": null,
+    "steamAppId": "2477710",
+    "youtubeVideoId": "YJxnDCrTqyM",
+    "mediaSlug": "nimbitfrontier",
+    "mediaFolder": "nimbitfrontier"
+  },
+  {
+    "id": "rune-gunner",
+    "title": "RUNE GUNNER",
+    "developer": "False Summit",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "Q1 2027",
+    "demo": "No public demo listed",
+    "overview": "A 1–4 player co-op roguelite shooter where guns and magic fuse into chaotic, build-breaking runs.",
+    "description": "A cooperative roguelite shooter for one to four players that combines firearms and magic. Classes can be mixed during a run, while stacking major upgrades creates increasingly powerful builds. Teams must survive chaotic encounters across a shattered world occupied by hostile Constructs.",
+    "officialUrl": null,
+    "steamAppId": "3769870",
+    "youtubeVideoId": "AdDfigLpSjg",
+    "mediaSlug": "runegunner",
+    "mediaFolder": "runegunner"
+  },
+  {
+    "id": "scp-antimemetics-division",
+    "title": "SCP: Antimemetics Division",
+    "developer": "Quadrant Five",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "In development",
+    "demo": "Not confirmed",
+    "overview": "Tactile survival horror inside a locked-down SCP site where memory and reality are dangerous resources.",
+    "description": "A tactile survival-horror game set after amnestics have taken effect and Site-48 has gone into lockdown. Players scavenge restricted equipment, earn access to forgotten areas, and manipulate reality while escaping lethal SCP anomalies. Memory itself is dangerous, because understanding too much can be fatal.",
+    "officialUrl": null,
+    "steamAppId": "4385740",
+    "youtubeVideoId": "3ENXLCf6c2o",
+    "mediaSlug": "scpantimemeticsdivision",
+    "mediaFolder": "scpantimemeticsdivision"
+  },
+  {
+    "id": "seedborne-soldiers",
+    "title": "Seedborne Soldiers",
+    "developer": "Hat Wobble Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Released",
+    "release": "June 1, 2026",
+    "demo": "Demo available on Steam",
+    "overview": "An auto-battler roguelike about growing heroes across time and space and assembling wild synergies.",
+    "description": "An auto-battler roguelike about growing a team of heroes drawn from different points in time and space. Players level their recruits, equip new gear, and assemble powerful synergies while searching for an exit from a surreal dreamworld.",
+    "officialUrl": null,
+    "steamAppId": "3039930",
+    "youtubeVideoId": "ejA_7I6fPTk",
+    "mediaSlug": "seedbornesoldiers",
+    "mediaFolder": "seedbornesoldiers"
+  },
+  {
+    "id": "shroomwood",
+    "title": "Shroomwood",
+    "developer": "Sporelite Games",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "2026",
+    "demo": "Demo and playtest available on Steam",
+    "overview": "Play a tiny mushroom warrior in a transforming wilderness, mixing melee and ranged weapons.",
+    "description": "A run-based action adventure set in a wilderness that changes and transforms. The player controls a small but determined mushroom warrior, combining melee and ranged weapons to battle the forest's peculiar creatures. The shifting environment is designed to make every run feel different.",
+    "officialUrl": null,
+    "steamAppId": "3504020",
+    "youtubeVideoId": "qZtAtZZIl_w",
+    "mediaSlug": "Martin%20Hundrup",
+    "mediaFolder": "Martin%20Hundrup"
+  },
+  {
+    "id": "steel-swarm-survivor",
+    "title": "Steel Swarm: SURVIVOR",
+    "developer": "Clay Token Game Studio, Inc.",
+    "platforms": [
+      "PC",
+      "Linux",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "Coming soon",
+    "demo": "Demo available on Steam and itch.io",
+    "overview": "A fast survivors-like where customizable drone formations overwhelm metal hordes solo or in co-op.",
+    "description": "A fast survivors-style roguelite centered on commanding drones against enormous mechanical hordes. Players arrange formations, upgrade individual drones, and refine their setup during each run. Enemy waves can be challenged alone or with other players in cooperative multiplayer.",
+    "officialUrl": null,
+    "steamAppId": "4307100",
+    "youtubeVideoId": "poEK4BFvMYA",
+    "mediaSlug": "steelswarmsurvivor",
+    "mediaFolder": "steelswarmsurvivor"
+  },
+  {
+    "id": "super-choppy",
+    "title": "Super Choppy",
+    "developer": "Sumoshell Bombfunk",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "To be announced",
+    "demo": "Demo available on Steam and itch.io",
+    "overview": "A pixel-art action platformer where Choppy uses an axe to throw, fly, climb, and chop.",
+    "description": "A challenging action platformer with colorful retro pixel artwork and a deliberately silly revenge story. Choppy's axe is more than a weapon: it supports throwing, flying, climbing, chopping, and the advanced movement required to master each stage.",
+    "officialUrl": null,
+    "steamAppId": "3616860",
+    "youtubeVideoId": "b6UtITtVuxk",
+    "mediaSlug": "superchoppy",
+    "mediaFolder": "superchoppy"
+  },
+  {
+    "id": "telera",
+    "title": "Telera",
+    "developer": "Entropico",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "2026",
+    "demo": "Demo available on Steam",
+    "overview": "A roguelike dice-builder about rolling, scoring, upgrading, combining magic items, and out-thinking luck.",
+    "description": "A roguelike dice-building game for players who enjoy large scores and calculated risks. Each round involves rolling dice, earning points, and clearing levels; between rounds, players upgrade dice, acquire new ones, and combine magical items. Every run mixes luck, planning, and player choices on the path toward legendary bosses and a new high score.",
+    "officialUrl": null,
+    "steamAppId": "4079370",
+    "youtubeVideoId": "Qv9GY_9RpGo",
+    "mediaSlug": "telera",
+    "mediaFolder": "telera"
+  },
+  {
+    "id": "the-assessment",
+    "title": "The Assessment",
+    "developer": "Miga Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "Q4 2026",
+    "demo": "No public demo listed",
+    "overview": "An archaeologist explores a forgotten castle, performs rituals, releases souls, and confronts corrupted memories.",
+    "description": "A narrative horror game about an archaeologist hired to examine a forgotten castle. The assignment reveals the truth behind human sacrifices sealed within its walls. Players perform rituals, free trapped souls, and experience Gabrielle's most painful memories as the castle's spirits distort them.",
+    "officialUrl": null,
+    "steamAppId": "4081850",
+    "youtubeVideoId": "JR4hXyOlywQ",
+    "mediaSlug": "theassessment",
+    "mediaFolder": "theassessment"
+  },
+  {
+    "id": "tileshire",
+    "title": "TileShire",
+    "developer": "Boss Blob",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "2026",
+    "demo": "No public demo listed",
+    "overview": "A minimalist townbuilder where placing and transforming tiles earns points, cards, and townsfolk.",
+    "description": "A minimalist town-building game where placing and transforming tiles produces points and expands the settlement. As the shire develops, players draft new cards and recruit townsfolk whose abilities help turn a simple arrangement of tiles into a home filled with life.",
+    "officialUrl": null,
+    "steamAppId": "4370780",
+    "youtubeVideoId": "C1afDQkrrLg",
+    "mediaSlug": "tileshire",
+    "mediaFolder": "tileshire"
+  },
+  {
+    "id": "tower-lab",
+    "title": "Tower Lab",
+    "developer": "Play Tug Studio",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "September 7, 2026",
+    "demo": "No public demo listed",
+    "overview": "A physics tower-defense roguelite: shrink, grow, split, and clone objects to push enemies away.",
+    "description": "A physics-driven roguelite tower-defense game where enemies do not use traditional health. Projectiles and units are physical objects that can be enlarged, reduced, duplicated, or divided. Players combine towers into unusual contraptions designed to push entire enemy formations off the level.",
+    "officialUrl": null,
+    "steamAppId": "3084810",
+    "youtubeVideoId": "FCEoowKglGA",
+    "mediaSlug": "towerlab",
+    "mediaFolder": "towerlab"
+  },
+  {
+    "id": "tricky-and-the-dream-caster",
+    "title": "Tricky and the Dream Caster",
+    "developer": "PossQueen",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "Q4 2027",
+    "demo": "Demo available on Steam",
+    "overview": "A colorful platforming adventure starring Tricky O’Possum and Volt the Mouse on a wizard-punching mission.",
+    "description": "A platforming adventure about breaking a curse of eternal sleep by invading the responsible wizard's castle and beating him up. Players control Tricky O'Possum and Volt the Mouse as they run, jump, collect keys, and battle through the Dream Caster's realm on the way to his stronghold.",
+    "officialUrl": null,
+    "steamAppId": "3564580",
+    "youtubeVideoId": "nzQXQ_nIGFk",
+    "mediaSlug": "trickyandthedreamcaster",
+    "mediaFolder": "trickyandthedreamcaster"
+  },
+  {
+    "id": "turning-manor",
+    "title": "Turning Manor",
+    "developer": "Sabbatical Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "2026",
+    "demo": "Demo available on Steam and itch.io",
+    "overview": "An anomaly-spotting horror game with no resets, more lore, and leaderboards inside a suspicious workplace.",
+    "description": "An anomaly-observation game that begins when unsettling events follow the signing of a new job contract. Players compare rooms and count differences while investigating the mystery of Turning Manor. The design expands the familiar anomaly format with persistent progress, additional story, and leaderboards rather than constant resets.",
+    "officialUrl": null,
+    "steamAppId": "3855530",
+    "youtubeVideoId": "5JvE5PJ6-Bk",
+    "mediaSlug": "turningmanor",
+    "mediaFolder": "turningmanor"
+  },
+  {
+    "id": "we-need-an-army",
+    "title": "We Need An Army",
+    "developer": "Elder Bear Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "Q4 2026",
+    "demo": "No public demo listed",
+    "overview": "A tactical slots-based roguelike battler about collecting units, finding relics, and shuffling an army.",
+    "description": "A tactical, slots-based roguelike battler about constructing the strongest possible army. Players collect units, uncover relics, and complete minigames that affect their forces. Success comes from making good combinations and shuffling the available pieces into a winning formation.",
+    "officialUrl": null,
+    "steamAppId": "3671320",
+    "youtubeVideoId": "qagBhjgCvs0",
+    "mediaSlug": "weneedanarmy",
+    "mediaFolder": "weneedanarmy"
+  },
+  {
+    "id": "will-follow-the-light",
+    "title": "WILL: Follow The Light",
+    "developer": "TomorrowHead Studio",
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam",
+      "PlayStation"
+    ],
+    "availability": "Released",
+    "release": "May 7, 2026",
+    "demo": "No public demo currently available",
+    "overview": "A story-driven first-person adventure puzzle about sailing harsh northern waters to reunite with family.",
+    "description": "A story-driven first-person puzzle adventure about a dangerous personal journey through northern waters. Will sails across harsh, isolated landscapes while confronting environmental challenges and puzzles. His voyage is ultimately about finding peace, returning to his family, and understanding himself.",
+    "officialUrl": null,
+    "steamAppId": "3144860",
+    "youtubeVideoId": "I7Scpm5vRIU",
+    "mediaSlug": "Roman%20Novikov",
+    "mediaFolder": "Roman%20Novikov"
+  },
+  {
+    "id": "wrestle-story",
+    "title": "Wrestle Story",
+    "developer": "Tic Toc Games",
+    "platforms": [
+      "PC",
+      "Steam"
+    ],
+    "displayPlatforms": [
+      "Steam"
+    ],
+    "availability": "Not yet released",
+    "release": "To be announced",
+    "demo": "No public demo listed",
+    "overview": "A smack-talking 3D wrestling RPG about creating a wrestler, building a tag team, and living the story.",
+    "description": "A wrestling role-playing adventure filled with hard hits and louder personalities. Players design their own wrestler, assemble a tag team, and explore a large 3D world built around the spectacle and culture of professional wrestling.",
+    "officialUrl": null,
+    "steamAppId": "2357610",
+    "youtubeVideoId": "Pbii7_HpooQ",
+    "mediaSlug": "wrestlestory",
+    "mediaFolder": "wrestlestory"
+  }
+]

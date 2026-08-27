@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
+import runOfShowData from "./generated/runOfShow.json";
 
-export type RunGame = { t: string; d: string; n: string };
+export type RunGame = { id: string; t: string; d: string; n: string };
 
 type Props = {
   games: RunGame[];
@@ -16,70 +17,53 @@ type ScheduleItem = {
   hosts: string;
   segmentNumber?: number;
   title: string;
+  productionNotes: string;
 };
 
-const config = {
-  startHour: 10,
-  startMinute: 0,
-  introMinutes: 5,
-  interviewMinutes: 6,
-  transitionMinutes: 2,
-  adMinutes: 2,
-  closingMinutes: 5,
-  hostPairs: ["A & B", "B & C", "C & D", "D & E", "E & F", "F & A"],
+type GeneratedScheduleItem = {
+  id: string;
+  kind: ScheduleItem["kind"];
+  segmentNumber: number | null;
+  gameId: string | null;
+  title: string;
+  start: string;
+  end: string;
+  hosts: string;
+  productionNotes: string;
 };
 
-const atMinutes = (date: Date, minutes: number) => new Date(date.getTime() + minutes * 60_000);
+type GeneratedRunOfShow = {
+  hostNote: string;
+  items: GeneratedScheduleItem[];
+};
+
+const generatedRunOfShow = runOfShowData as GeneratedRunOfShow;
+
 const fmt = (date: Date) => date.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
 
+function timeOnDay(day: Date, clock: string): Date {
+  const match = /^(\d{1,2}):(\d{2}) (AM|PM)$/.exec(clock);
+  if (!match) throw new Error(`Invalid generated schedule time: ${clock}`);
+  let hour = Number(match[1]) % 12;
+  if (match[3] === "PM") hour += 12;
+  const result = new Date(day);
+  result.setHours(hour, Number(match[2]), 0, 0);
+  return result;
+}
+
 function makeSchedule(games: RunGame[], day: Date): ScheduleItem[] {
-  let cursor = new Date(day);
-  cursor.setHours(config.startHour, config.startMinute, 0, 0);
-  let nextAd = new Date(cursor);
-  nextAd.setHours(cursor.getHours() + 1, 0, 0, 0);
-  const items: ScheduleItem[] = [];
-
-  let end = atMinutes(cursor, config.introMinutes);
-  items.push({ id: "intro", kind: "intro", start: cursor, end, hosts: "A & B", segmentNumber: 1, title: "Opening / Welcome to SIX 2026" });
-  cursor = end;
-  end = atMinutes(cursor, config.transitionMinutes);
-  items.push({ id: "transition-intro", kind: "transition", start: cursor, end, hosts: "-", title: "Break / Transition" });
-  cursor = end;
-
-  games.forEach((game, gameIndex) => {
-    const hosts = config.hostPairs[(gameIndex + 1) % config.hostPairs.length];
-    const segmentNumber = gameIndex + 2;
-    end = atMinutes(cursor, config.interviewMinutes);
-    items.push({
-      id: `segment-${segmentNumber}`,
-      kind: "game",
-      start: cursor,
-      end,
-      gameIndex,
-      hosts,
-      segmentNumber,
-      title: game.t,
-    });
-    cursor = end;
-
-    if (cursor >= nextAd) {
-      end = atMinutes(cursor, config.adMinutes);
-      items.push({ id: `ad-${gameIndex}`, kind: "ad", start: cursor, end, hosts, title: "Seattle Indies / Sponsor Ad Read" });
-      cursor = end;
-      while (nextAd <= cursor) {
-        nextAd = new Date(nextAd);
-        nextAd.setHours(nextAd.getHours() + 1);
-      }
-    }
-
-    end = atMinutes(cursor, config.transitionMinutes);
-    items.push({ id: `transition-${gameIndex}`, kind: "transition", start: cursor, end, hosts: "-", title: "Break / Transition" });
-    cursor = end;
-  });
-
-  end = atMinutes(cursor, config.closingMinutes);
-  items.push({ id: "closing", kind: "closing", start: cursor, end, hosts: "A & B", segmentNumber: 43, title: "Closing / Thank You" });
-  return items;
+  const gameIndexById = new Map(games.map((game, index) => [game.id, index]));
+  return generatedRunOfShow.items.map((item) => ({
+    id: item.id,
+    kind: item.kind,
+    start: timeOnDay(day, item.start),
+    end: timeOnDay(day, item.end),
+    gameIndex: item.gameId ? gameIndexById.get(item.gameId) : undefined,
+    hosts: item.hosts,
+    segmentNumber: item.segmentNumber ?? undefined,
+    title: item.title,
+    productionNotes: item.productionNotes,
+  }));
 }
 
 export default function RunOfShow({ games, onOpenGame }: Props) {
@@ -125,7 +109,7 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
       </aside>
 
       <div className="scheduleNote">
-        <b>Host A = TBD</b> · Host B = TBD · Host C = TBD · Host D = TBD · Host E = TBD · Host F = TBD
+        {generatedRunOfShow.hostNote.replaceAll(" | ", " · ")}
       </div>
 
       <div className="timeline">
@@ -151,6 +135,7 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
               </button>
               {expanded === item.id && (
                 <div className="segmentDetails">
+                  {item.productionNotes && <p><b>Production notes:</b> {item.productionNotes}</p>}
                   {game ? <>
                     <p>{game.n}</p>
                     <div className="cueGrid">
@@ -188,7 +173,7 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
           );
         })}
       </div>
-      <p className="configHint">Schedule settings live in <code>src/RunOfShow.tsx</code> under <code>config</code>, so the confirmed start time and durations can be updated in one place.</p>
+      <p className="configHint">Schedule times, hosts, ordering, and production notes are loaded from the <code>Run of Show</code> worksheet.</p>
     </section>
   );
 }
