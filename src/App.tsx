@@ -1,4 +1,4 @@
-"use client";
+
 import { useEffect, useMemo, useState } from "react";
 import { games, type Game } from "./data";
 import RunOfShow from "./RunOfShow";
