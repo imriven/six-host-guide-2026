@@ -59,6 +59,8 @@ button {
 .nextSegment .segmentState { color:var(--orange); }
 .pastSegment { opacity:.52; }
 .ad { background:#2a1933; border-color:#7445c7; }
+.hype { background:#352014; border-color:var(--orange); }
+.hype .segmentMain strong,.hype .segmentDetails h3 { color:var(--orange); }
 .transition { background:#17171f; border-style:dashed; opacity:.78; }
 .transition .segmentMain strong { font-style:italic; font-weight:600; color:var(--muted); }
 .intro,.closing { background:#1d2a20; border-color:#6f9c60; }

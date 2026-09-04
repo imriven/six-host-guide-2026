@@ -64,7 +64,7 @@ hosts = doc.add_paragraph(str(generated_run_of_show["hostNote"]).replace(" | ", 
 hosts.paragraph_format.space_after = Pt(7)
 hosts.runs[0].font.name = "Arial"; hosts.runs[0].font.size = Pt(8)
 
-headers = ["SEG", "GAME / BREAK", "DEVELOPER / PUBLISHER", "START", "END", "HOSTS", "PRODUCTION NOTES"]
+headers = ["SEG", "GAME / BREAK", "DEVELOPER / PUBLISHER", "START", "END", "HOST", "PRODUCTION NOTES"]
 widths = [.38, 1.72, 1.45, .70, .70, .62, 4.76]
 table = doc.add_table(rows=1, cols=len(headers))
 table.autofit = False
@@ -80,12 +80,18 @@ for row in rows:
     for index, value in enumerate(values):
         is_title = index == 1
         write_cell(cells[index], value,
-                   bold=is_title and row["kind"] in ("Game", "Intro", "Closing", "Ad"),
+                   bold=is_title and row["kind"] in ("Game", "Hype", "Intro", "Closing", "Ad"),
                    italic=is_title and row["kind"] == "Transition",
                    color="7445C7" if is_title and row["kind"] == "Game" else "202028")
         cells[index].width = Inches(widths[index])
     if row["kind"] == "Ad":
         for cell in cells: shade(cell, "EADCF4")
+    elif row["kind"] == "Hype":
+        for cell in cells: shade(cell, "FCE4D6")
+        for cell in cells:
+            for paragraph in cell.paragraphs:
+                for run in paragraph.runs:
+                    run.font.color.rgb = RGBColor(194, 65, 12)
     elif row["kind"] == "Transition":
         for cell in cells: shade(cell, "F2F1F5")
     elif row["kind"] in ("Intro", "Closing"):

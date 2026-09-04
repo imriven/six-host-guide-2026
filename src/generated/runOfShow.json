@@ -2,14 +2,25 @@
   "hostNote": "Host A = TBD | Host B = TBD | Host C = TBD | Host D = TBD | Host E = TBD | Host F = TBD",
   "items": [
     {
+      "id": "hype-1",
+      "kind": "hype",
+      "segmentNumber": null,
+      "title": "SIX Hype Hour",
+      "developer": "Seattle Indies",
+      "start": "10:00 AM",
+      "end": "12:00 PM",
+      "hosts": "TBD",
+      "productionNotes": ""
+    },
+    {
       "id": "intro-1",
       "kind": "intro",
       "segmentNumber": 1,
       "title": "Opening / Welcome to SIX 2026",
       "developer": "Seattle Indies",
-      "start": "10:00 AM",
-      "end": "10:05 AM",
-      "hosts": "A & B",
+      "start": "12:00 PM",
+      "end": "12:05 PM",
+      "hosts": "A",
       "productionNotes": ""
     },
     {
@@ -18,8 +29,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "10:05 AM",
-      "end": "10:07 AM",
+      "start": "12:05 PM",
+      "end": "12:07 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -29,9 +40,9 @@
       "segmentNumber": 2,
       "title": "Ascent Rivals",
       "developer": "GENUN Games",
-      "start": "10:07 AM",
-      "end": "10:13 AM",
-      "hosts": "B & C",
+      "start": "12:07 PM",
+      "end": "12:13 PM",
+      "hosts": "B",
       "productionNotes": ""
     },
     {
@@ -40,8 +51,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "10:13 AM",
-      "end": "10:15 AM",
+      "start": "12:13 PM",
+      "end": "12:15 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -51,9 +62,9 @@
       "segmentNumber": 3,
       "title": "Breach Of Contract",
       "developer": "Fern Sprout Studios",
-      "start": "10:15 AM",
-      "end": "10:21 AM",
-      "hosts": "C & D",
+      "start": "12:15 PM",
+      "end": "12:21 PM",
+      "hosts": "C",
       "productionNotes": ""
     },
     {
@@ -62,8 +73,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "10:21 AM",
-      "end": "10:23 AM",
+      "start": "12:21 PM",
+      "end": "12:23 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -73,9 +84,9 @@
       "segmentNumber": 4,
       "title": "BroomSweeper",
       "developer": "BandWidth Games",
-      "start": "10:23 AM",
-      "end": "10:29 AM",
-      "hosts": "D & E",
+      "start": "12:23 PM",
+      "end": "12:29 PM",
+      "hosts": "D",
       "productionNotes": ""
     },
     {
@@ -84,8 +95,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "10:29 AM",
-      "end": "10:31 AM",
+      "start": "12:29 PM",
+      "end": "12:31 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -95,9 +106,9 @@
       "segmentNumber": 5,
       "title": "Cooking Fist",
       "developer": "Spaghetti Code LLC",
-      "start": "10:31 AM",
-      "end": "10:37 AM",
-      "hosts": "E & F",
+      "start": "12:31 PM",
+      "end": "12:37 PM",
+      "hosts": "E",
       "productionNotes": ""
     },
     {
@@ -106,8 +117,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "10:37 AM",
-      "end": "10:39 AM",
+      "start": "12:37 PM",
+      "end": "12:39 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -117,9 +128,9 @@
       "segmentNumber": 6,
       "title": "Creature Kitchen",
       "developer": "The Rat Zone",
-      "start": "10:39 AM",
-      "end": "10:45 AM",
-      "hosts": "F & A",
+      "start": "12:39 PM",
+      "end": "12:45 PM",
+      "hosts": "F",
       "productionNotes": ""
     },
     {
@@ -128,8 +139,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "10:45 AM",
-      "end": "10:47 AM",
+      "start": "12:45 PM",
+      "end": "12:47 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -139,9 +150,9 @@
       "segmentNumber": 7,
       "title": "Desolus",
       "developer": "Mark J. Mayers",
-      "start": "10:47 AM",
-      "end": "10:53 AM",
-      "hosts": "A & B",
+      "start": "12:47 PM",
+      "end": "12:53 PM",
+      "hosts": "A",
       "productionNotes": ""
     },
     {
@@ -150,8 +161,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "10:53 AM",
-      "end": "10:55 AM",
+      "start": "12:53 PM",
+      "end": "12:55 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -161,9 +172,9 @@
       "segmentNumber": 8,
       "title": "Diabolocracy",
       "developer": "Chaos Gremlin Games",
-      "start": "10:55 AM",
-      "end": "11:01 AM",
-      "hosts": "B & C",
+      "start": "12:55 PM",
+      "end": "1:01 PM",
+      "hosts": "B",
       "productionNotes": ""
     },
     {
@@ -172,9 +183,9 @@
       "segmentNumber": null,
       "title": "Seattle Indies / Sponsor Ad Read",
       "developer": "Sponsor copy pending",
-      "start": "11:01 AM",
-      "end": "11:03 AM",
-      "hosts": "B & C",
+      "start": "1:01 PM",
+      "end": "1:03 PM",
+      "hosts": "B",
       "productionNotes": ""
     },
     {
@@ -183,8 +194,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "11:03 AM",
-      "end": "11:05 AM",
+      "start": "1:03 PM",
+      "end": "1:05 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -194,9 +205,9 @@
       "segmentNumber": 9,
       "title": "Dig Too Deep",
       "developer": "Punch Up Games",
-      "start": "11:05 AM",
-      "end": "11:11 AM",
-      "hosts": "C & D",
+      "start": "1:05 PM",
+      "end": "1:11 PM",
+      "hosts": "C",
       "productionNotes": ""
     },
     {
@@ -205,8 +216,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "11:11 AM",
-      "end": "11:13 AM",
+      "start": "1:11 PM",
+      "end": "1:13 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -216,9 +227,9 @@
       "segmentNumber": 10,
       "title": "Dittori",
       "developer": "Blookerstein",
-      "start": "11:13 AM",
-      "end": "11:19 AM",
-      "hosts": "D & E",
+      "start": "1:13 PM",
+      "end": "1:19 PM",
+      "hosts": "D",
       "productionNotes": ""
     },
     {
@@ -227,8 +238,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "11:19 AM",
-      "end": "11:21 AM",
+      "start": "1:19 PM",
+      "end": "1:21 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -238,9 +249,9 @@
       "segmentNumber": 11,
       "title": "Dungeon Bodega Simulator",
       "developer": "Alien Fruit Games",
-      "start": "11:21 AM",
-      "end": "11:27 AM",
-      "hosts": "E & F",
+      "start": "1:21 PM",
+      "end": "1:27 PM",
+      "hosts": "E",
       "productionNotes": ""
     },
     {
@@ -249,8 +260,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "11:27 AM",
-      "end": "11:29 AM",
+      "start": "1:27 PM",
+      "end": "1:29 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -260,9 +271,9 @@
       "segmentNumber": 12,
       "title": "End of Garbage",
       "developer": "Joshua Rosen (Rakelock LLC)",
-      "start": "11:29 AM",
-      "end": "11:35 AM",
-      "hosts": "F & A",
+      "start": "1:29 PM",
+      "end": "1:35 PM",
+      "hosts": "F",
       "productionNotes": ""
     },
     {
@@ -271,8 +282,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "11:35 AM",
-      "end": "11:37 AM",
+      "start": "1:35 PM",
+      "end": "1:37 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -282,9 +293,9 @@
       "segmentNumber": 13,
       "title": "Fairy Circle",
       "developer": "Play Hooky",
-      "start": "11:37 AM",
-      "end": "11:43 AM",
-      "hosts": "A & B",
+      "start": "1:37 PM",
+      "end": "1:43 PM",
+      "hosts": "A",
       "productionNotes": ""
     },
     {
@@ -293,8 +304,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "11:43 AM",
-      "end": "11:45 AM",
+      "start": "1:43 PM",
+      "end": "1:45 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -304,9 +315,9 @@
       "segmentNumber": 14,
       "title": "Feeding Gooble",
       "developer": "Displacer Labs",
-      "start": "11:45 AM",
-      "end": "11:51 AM",
-      "hosts": "B & C",
+      "start": "1:45 PM",
+      "end": "1:51 PM",
+      "hosts": "B",
       "productionNotes": ""
     },
     {
@@ -315,8 +326,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "11:51 AM",
-      "end": "11:53 AM",
+      "start": "1:51 PM",
+      "end": "1:53 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -326,9 +337,9 @@
       "segmentNumber": 15,
       "title": "Gravity Goblins",
       "developer": "The Rat Zone",
-      "start": "11:53 AM",
-      "end": "11:59 AM",
-      "hosts": "C & D",
+      "start": "1:53 PM",
+      "end": "1:59 PM",
+      "hosts": "C",
       "productionNotes": ""
     },
     {
@@ -337,8 +348,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "11:59 AM",
-      "end": "12:01 PM",
+      "start": "1:59 PM",
+      "end": "2:01 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -348,9 +359,9 @@
       "segmentNumber": 16,
       "title": "Hamsteria",
       "developer": "2WheelerDev",
-      "start": "12:01 PM",
-      "end": "12:07 PM",
-      "hosts": "D & E",
+      "start": "2:01 PM",
+      "end": "2:07 PM",
+      "hosts": "D",
       "productionNotes": ""
     },
     {
@@ -359,9 +370,9 @@
       "segmentNumber": null,
       "title": "Seattle Indies / Sponsor Ad Read",
       "developer": "Sponsor copy pending",
-      "start": "12:07 PM",
-      "end": "12:09 PM",
-      "hosts": "D & E",
+      "start": "2:07 PM",
+      "end": "2:09 PM",
+      "hosts": "D",
       "productionNotes": ""
     },
     {
@@ -370,8 +381,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "12:09 PM",
-      "end": "12:11 PM",
+      "start": "2:09 PM",
+      "end": "2:11 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -381,9 +392,9 @@
       "segmentNumber": 17,
       "title": "Haunted Heist",
       "developer": "autotroph games",
-      "start": "12:11 PM",
-      "end": "12:17 PM",
-      "hosts": "E & F",
+      "start": "2:11 PM",
+      "end": "2:17 PM",
+      "hosts": "E",
       "productionNotes": ""
     },
     {
@@ -392,8 +403,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "12:17 PM",
-      "end": "12:19 PM",
+      "start": "2:17 PM",
+      "end": "2:19 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -403,9 +414,9 @@
       "segmentNumber": 18,
       "title": "Hogen",
       "developer": "Scrappyard Games",
-      "start": "12:19 PM",
-      "end": "12:25 PM",
-      "hosts": "F & A",
+      "start": "2:19 PM",
+      "end": "2:25 PM",
+      "hosts": "F",
       "productionNotes": ""
     },
     {
@@ -414,8 +425,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "12:25 PM",
-      "end": "12:27 PM",
+      "start": "2:25 PM",
+      "end": "2:27 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -425,9 +436,9 @@
       "segmentNumber": 19,
       "title": "HYPERFIST",
       "developer": "Chirality",
-      "start": "12:27 PM",
-      "end": "12:33 PM",
-      "hosts": "A & B",
+      "start": "2:27 PM",
+      "end": "2:33 PM",
+      "hosts": "A",
       "productionNotes": ""
     },
     {
@@ -436,8 +447,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "12:33 PM",
-      "end": "12:35 PM",
+      "start": "2:33 PM",
+      "end": "2:35 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -447,9 +458,9 @@
       "segmentNumber": 20,
       "title": "Killing Baby Hitler",
       "developer": "The Coffee Industrial Complex",
-      "start": "12:35 PM",
-      "end": "12:41 PM",
-      "hosts": "B & C",
+      "start": "2:35 PM",
+      "end": "2:41 PM",
+      "hosts": "B",
       "productionNotes": ""
     },
     {
@@ -458,8 +469,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "12:41 PM",
-      "end": "12:43 PM",
+      "start": "2:41 PM",
+      "end": "2:43 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -469,9 +480,9 @@
       "segmentNumber": 21,
       "title": "Knockout 2: Wrath of the Karen",
       "developer": "ExceptioNULL Games",
-      "start": "12:43 PM",
-      "end": "12:49 PM",
-      "hosts": "C & D",
+      "start": "2:43 PM",
+      "end": "2:49 PM",
+      "hosts": "C",
       "productionNotes": ""
     },
     {
@@ -480,8 +491,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "12:49 PM",
-      "end": "12:51 PM",
+      "start": "2:49 PM",
+      "end": "2:51 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -491,9 +502,9 @@
       "segmentNumber": 22,
       "title": "Malice In Wonderland",
       "developer": "Slyglass Games",
-      "start": "12:51 PM",
-      "end": "12:57 PM",
-      "hosts": "D & E",
+      "start": "2:51 PM",
+      "end": "2:57 PM",
+      "hosts": "D",
       "productionNotes": ""
     },
     {
@@ -502,8 +513,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "12:57 PM",
-      "end": "12:59 PM",
+      "start": "2:57 PM",
+      "end": "2:59 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -513,9 +524,9 @@
       "segmentNumber": 23,
       "title": "Manafinder II",
       "developer": "Wolfsden LLC",
-      "start": "12:59 PM",
-      "end": "1:05 PM",
-      "hosts": "E & F",
+      "start": "2:59 PM",
+      "end": "3:05 PM",
+      "hosts": "E",
       "productionNotes": ""
     },
     {
@@ -524,9 +535,9 @@
       "segmentNumber": null,
       "title": "Seattle Indies / Sponsor Ad Read",
       "developer": "Sponsor copy pending",
-      "start": "1:05 PM",
-      "end": "1:07 PM",
-      "hosts": "E & F",
+      "start": "3:05 PM",
+      "end": "3:07 PM",
+      "hosts": "E",
       "productionNotes": ""
     },
     {
@@ -535,8 +546,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "1:07 PM",
-      "end": "1:09 PM",
+      "start": "3:07 PM",
+      "end": "3:09 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -546,9 +557,9 @@
       "segmentNumber": 24,
       "title": "MYRIORAMA",
       "developer": "J&K Games",
-      "start": "1:09 PM",
-      "end": "1:15 PM",
-      "hosts": "F & A",
+      "start": "3:09 PM",
+      "end": "3:15 PM",
+      "hosts": "F",
       "productionNotes": ""
     },
     {
@@ -557,8 +568,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "1:15 PM",
-      "end": "1:17 PM",
+      "start": "3:15 PM",
+      "end": "3:17 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -568,9 +579,9 @@
       "segmentNumber": 25,
       "title": "Nightmare Kitchen",
       "developer": "Byteback Studios",
-      "start": "1:17 PM",
-      "end": "1:23 PM",
-      "hosts": "A & B",
+      "start": "3:17 PM",
+      "end": "3:23 PM",
+      "hosts": "A",
       "productionNotes": ""
     },
     {
@@ -579,8 +590,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "1:23 PM",
-      "end": "1:25 PM",
+      "start": "3:23 PM",
+      "end": "3:25 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -590,9 +601,9 @@
       "segmentNumber": 26,
       "title": "Nimbit Frontier",
       "developer": "Megasploot",
-      "start": "1:25 PM",
-      "end": "1:31 PM",
-      "hosts": "B & C",
+      "start": "3:25 PM",
+      "end": "3:31 PM",
+      "hosts": "B",
       "productionNotes": ""
     },
     {
@@ -601,8 +612,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "1:31 PM",
-      "end": "1:33 PM",
+      "start": "3:31 PM",
+      "end": "3:33 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -612,9 +623,9 @@
       "segmentNumber": 27,
       "title": "RUNE GUNNER",
       "developer": "False Summit",
-      "start": "1:33 PM",
-      "end": "1:39 PM",
-      "hosts": "C & D",
+      "start": "3:33 PM",
+      "end": "3:39 PM",
+      "hosts": "C",
       "productionNotes": ""
     },
     {
@@ -623,8 +634,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "1:39 PM",
-      "end": "1:41 PM",
+      "start": "3:39 PM",
+      "end": "3:41 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -634,9 +645,9 @@
       "segmentNumber": 28,
       "title": "SCP: Antimemetics Division",
       "developer": "Quadrant Five",
-      "start": "1:41 PM",
-      "end": "1:47 PM",
-      "hosts": "D & E",
+      "start": "3:41 PM",
+      "end": "3:47 PM",
+      "hosts": "D",
       "productionNotes": ""
     },
     {
@@ -645,8 +656,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "1:47 PM",
-      "end": "1:49 PM",
+      "start": "3:47 PM",
+      "end": "3:49 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -656,9 +667,9 @@
       "segmentNumber": 29,
       "title": "Seedborne Soldiers",
       "developer": "Hat Wobble Games",
-      "start": "1:49 PM",
-      "end": "1:55 PM",
-      "hosts": "E & F",
+      "start": "3:49 PM",
+      "end": "3:55 PM",
+      "hosts": "E",
       "productionNotes": ""
     },
     {
@@ -667,8 +678,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "1:55 PM",
-      "end": "1:57 PM",
+      "start": "3:55 PM",
+      "end": "3:57 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -678,9 +689,9 @@
       "segmentNumber": 30,
       "title": "Shroomwood",
       "developer": "Sporelite Games",
-      "start": "1:57 PM",
-      "end": "2:03 PM",
-      "hosts": "F & A",
+      "start": "3:57 PM",
+      "end": "4:03 PM",
+      "hosts": "F",
       "productionNotes": ""
     },
     {
@@ -689,9 +700,9 @@
       "segmentNumber": null,
       "title": "Seattle Indies / Sponsor Ad Read",
       "developer": "Sponsor copy pending",
-      "start": "2:03 PM",
-      "end": "2:05 PM",
-      "hosts": "F & A",
+      "start": "4:03 PM",
+      "end": "4:05 PM",
+      "hosts": "F",
       "productionNotes": ""
     },
     {
@@ -700,8 +711,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "2:05 PM",
-      "end": "2:07 PM",
+      "start": "4:05 PM",
+      "end": "4:07 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -711,9 +722,9 @@
       "segmentNumber": 31,
       "title": "Steel Swarm: SURVIVOR",
       "developer": "Clay Token Game Studio, Inc.",
-      "start": "2:07 PM",
-      "end": "2:13 PM",
-      "hosts": "A & B",
+      "start": "4:07 PM",
+      "end": "4:13 PM",
+      "hosts": "A",
       "productionNotes": ""
     },
     {
@@ -722,8 +733,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "2:13 PM",
-      "end": "2:15 PM",
+      "start": "4:13 PM",
+      "end": "4:15 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -733,9 +744,9 @@
       "segmentNumber": 32,
       "title": "Super Choppy",
       "developer": "Sumoshell Bombfunk",
-      "start": "2:15 PM",
-      "end": "2:21 PM",
-      "hosts": "B & C",
+      "start": "4:15 PM",
+      "end": "4:21 PM",
+      "hosts": "B",
       "productionNotes": ""
     },
     {
@@ -744,8 +755,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "2:21 PM",
-      "end": "2:23 PM",
+      "start": "4:21 PM",
+      "end": "4:23 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -755,9 +766,9 @@
       "segmentNumber": 33,
       "title": "Telera",
       "developer": "Entropico",
-      "start": "2:23 PM",
-      "end": "2:29 PM",
-      "hosts": "C & D",
+      "start": "4:23 PM",
+      "end": "4:29 PM",
+      "hosts": "C",
       "productionNotes": ""
     },
     {
@@ -766,8 +777,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "2:29 PM",
-      "end": "2:31 PM",
+      "start": "4:29 PM",
+      "end": "4:31 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -777,9 +788,9 @@
       "segmentNumber": 34,
       "title": "The Assessment",
       "developer": "Miga Games",
-      "start": "2:31 PM",
-      "end": "2:37 PM",
-      "hosts": "D & E",
+      "start": "4:31 PM",
+      "end": "4:37 PM",
+      "hosts": "D",
       "productionNotes": ""
     },
     {
@@ -788,8 +799,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "2:37 PM",
-      "end": "2:39 PM",
+      "start": "4:37 PM",
+      "end": "4:39 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -799,9 +810,9 @@
       "segmentNumber": 35,
       "title": "TileShire",
       "developer": "Boss Blob",
-      "start": "2:39 PM",
-      "end": "2:45 PM",
-      "hosts": "E & F",
+      "start": "4:39 PM",
+      "end": "4:45 PM",
+      "hosts": "E",
       "productionNotes": ""
     },
     {
@@ -810,8 +821,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "2:45 PM",
-      "end": "2:47 PM",
+      "start": "4:45 PM",
+      "end": "4:47 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -821,9 +832,9 @@
       "segmentNumber": 36,
       "title": "Tower Lab",
       "developer": "Play Tug Studio",
-      "start": "2:47 PM",
-      "end": "2:53 PM",
-      "hosts": "F & A",
+      "start": "4:47 PM",
+      "end": "4:53 PM",
+      "hosts": "F",
       "productionNotes": ""
     },
     {
@@ -832,8 +843,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "2:53 PM",
-      "end": "2:55 PM",
+      "start": "4:53 PM",
+      "end": "4:55 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -843,9 +854,9 @@
       "segmentNumber": 37,
       "title": "Tricky and the Dream Caster",
       "developer": "PossQueen",
-      "start": "2:55 PM",
-      "end": "3:01 PM",
-      "hosts": "A & B",
+      "start": "4:55 PM",
+      "end": "5:01 PM",
+      "hosts": "A",
       "productionNotes": ""
     },
     {
@@ -854,9 +865,9 @@
       "segmentNumber": null,
       "title": "Seattle Indies / Sponsor Ad Read",
       "developer": "Sponsor copy pending",
-      "start": "3:01 PM",
-      "end": "3:03 PM",
-      "hosts": "A & B",
+      "start": "5:01 PM",
+      "end": "5:03 PM",
+      "hosts": "A",
       "productionNotes": ""
     },
     {
@@ -865,8 +876,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "3:03 PM",
-      "end": "3:05 PM",
+      "start": "5:03 PM",
+      "end": "5:05 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -876,9 +887,9 @@
       "segmentNumber": 38,
       "title": "Turning Manor",
       "developer": "Sabbatical Games",
-      "start": "3:05 PM",
-      "end": "3:11 PM",
-      "hosts": "B & C",
+      "start": "5:05 PM",
+      "end": "5:11 PM",
+      "hosts": "B",
       "productionNotes": ""
     },
     {
@@ -887,8 +898,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "3:11 PM",
-      "end": "3:13 PM",
+      "start": "5:11 PM",
+      "end": "5:13 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -898,9 +909,9 @@
       "segmentNumber": 39,
       "title": "We Need An Army",
       "developer": "Elder Bear Games",
-      "start": "3:13 PM",
-      "end": "3:19 PM",
-      "hosts": "C & D",
+      "start": "5:13 PM",
+      "end": "5:19 PM",
+      "hosts": "C",
       "productionNotes": ""
     },
     {
@@ -909,8 +920,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "3:19 PM",
-      "end": "3:21 PM",
+      "start": "5:19 PM",
+      "end": "5:21 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -920,9 +931,9 @@
       "segmentNumber": 40,
       "title": "WILL: Follow The Light",
       "developer": "TomorrowHead Studio",
-      "start": "3:21 PM",
-      "end": "3:27 PM",
-      "hosts": "D & E",
+      "start": "5:21 PM",
+      "end": "5:27 PM",
+      "hosts": "D",
       "productionNotes": ""
     },
     {
@@ -931,8 +942,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "3:27 PM",
-      "end": "3:29 PM",
+      "start": "5:27 PM",
+      "end": "5:29 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -942,9 +953,9 @@
       "segmentNumber": 41,
       "title": "Wrestle Story",
       "developer": "Tic Toc Games",
-      "start": "3:29 PM",
-      "end": "3:35 PM",
-      "hosts": "E & F",
+      "start": "5:29 PM",
+      "end": "5:35 PM",
+      "hosts": "E",
       "productionNotes": ""
     },
     {
@@ -953,8 +964,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "3:35 PM",
-      "end": "3:37 PM",
+      "start": "5:35 PM",
+      "end": "5:37 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -964,9 +975,9 @@
       "segmentNumber": 42,
       "title": "Hit & Haunted",
       "developer": "Amnesiac Ghost",
-      "start": "3:37 PM",
-      "end": "3:43 PM",
-      "hosts": "F & A",
+      "start": "5:37 PM",
+      "end": "5:43 PM",
+      "hosts": "F",
       "productionNotes": ""
     },
     {
@@ -975,8 +986,8 @@
       "segmentNumber": null,
       "title": "Break / Transition",
       "developer": "",
-      "start": "3:43 PM",
-      "end": "3:45 PM",
+      "start": "5:43 PM",
+      "end": "5:45 PM",
       "hosts": "-",
       "productionNotes": ""
     },
@@ -986,9 +997,9 @@
       "segmentNumber": 43,
       "title": "Closing / Thank You",
       "developer": "Seattle Indies",
-      "start": "3:45 PM",
-      "end": "3:50 PM",
-      "hosts": "A & B",
+      "start": "5:45 PM",
+      "end": "5:50 PM",
+      "hosts": "A",
       "productionNotes": ""
     }
   ]

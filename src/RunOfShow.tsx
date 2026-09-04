@@ -10,7 +10,7 @@ type Props = {
 
 type ScheduleItem = {
   id: string;
-  kind: "intro" | "game" | "ad" | "transition" | "closing";
+  kind: "hype" | "intro" | "game" | "ad" | "transition" | "closing";
   start: Date;
   end: Date;
   gameIndex?: number;
@@ -126,7 +126,7 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
               <button className="segmentSummary" onClick={() => setExpanded(expanded === item.id ? null : item.id)}>
                 <span className="segmentTime">{fmt(item.start)}<small>– {fmt(item.end)}</small></span>
                 <span className="segmentMain">
-                  <small>{item.segmentNumber ? `Segment ${String(item.segmentNumber).padStart(2, "0")} · Hosts ${item.hosts}` : item.kind === "ad" ? `Ad read · Hosts ${item.hosts}` : "Break / Transition"}</small>
+                  <small>{item.segmentNumber ? `Segment ${String(item.segmentNumber).padStart(2, "0")} · Host ${item.hosts}` : item.kind === "ad" ? `Ad read · Host ${item.hosts}` : item.kind === "hype" ? `Hype Hour · Host ${item.hosts}` : "Break / Transition"}</small>
                   <strong>{item.title}</strong>
                   {game && <em>{game.d}</em>}
                 </span>
@@ -144,9 +144,9 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
                       <section className="nextUpCard">
                         <h3>Next up after break</h3>
                         {nextGameItem && nextGame ? (
-                          <p><b>{fmt(nextGameItem.start)} · Hosts {nextGameItem.hosts}</b><br />{nextGame.t} · {nextGame.d}</p>
+                          <p><b>{fmt(nextGameItem.start)} · Host {nextGameItem.hosts}</b><br />{nextGame.t} · {nextGame.d}</p>
                         ) : (
-                          <p><b>{fmt(schedule[schedule.length - 1].start)} · Hosts A &amp; B</b><br />Closing / Thank You</p>
+                          <p><b>{fmt(schedule[schedule.length - 1].start)} · Host A</b><br />Closing / Thank You</p>
                         )}
                       </section>
                     </div>
@@ -155,6 +155,9 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
                     <h3>Placeholder ad copy</h3>
                     <p>Seattle Indies supports and connects independent game developers throughout the Pacific Northwest. Visit Seattle Indies to discover local projects, events, and ways to support the community. Sponsor messaging will be added when confirmed.</p>
                     <p><b>Transition out:</b> Welcome viewers back and introduce the next scheduled game and developer.</p>
+                    <button onClick={() => setManualId(item.id)}>Mark as current segment</button>
+                  </> : item.kind === "hype" ? <>
+                    <h3>Hype Hour cue</h3><p>Preview the SIX lineup and build excitement for the showcase before the main broadcast begins.</p>
                     <button onClick={() => setManualId(item.id)}>Mark as current segment</button>
                   </> : item.kind === "intro" ? <>
                     <h3>Opening cue</h3><p>Welcome viewers, introduce the event and hosts, explain the showcase format, and lead into the first game.</p>

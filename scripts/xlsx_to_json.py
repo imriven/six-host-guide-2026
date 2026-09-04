@@ -50,7 +50,7 @@ RUN_HEADERS = [
     "DEVELOPER / PUBLISHER",
     "START",
     "END",
-    "HOSTS",
+    "HOST",
     "PRODUCTION NOTES",
 ]
 AVAILABILITY = {"Released", "Not yet released"}
@@ -254,6 +254,8 @@ def validate_games(records: list[dict[str, str]]) -> list[dict[str, object]]:
 
 
 def schedule_kind(title: str, segment: str, game_titles: set[str]) -> str:
+    if title == "SIX Hype Hour":
+        return "hype"
     if title in game_titles:
         return "game"
     if title == "Break / Transition":
@@ -291,8 +293,8 @@ def validate_schedule(
         except WorkbookValidationError as exc:
             errors.append(str(exc))
             continue
-        if not record["HOSTS"]:
-            errors.append(f"{location}: HOSTS is required")
+        if not record["HOST"]:
+            errors.append(f"{location}: HOST is required")
         segment_text = record["SEG"]
         segment_number: int | None = None
         if segment_text not in {"", "-"}:
@@ -311,7 +313,7 @@ def validate_schedule(
                 "developer": record["DEVELOPER / PUBLISHER"],
                 "start": start,
                 "end": end,
-                "hosts": record["HOSTS"],
+                "hosts": record["HOST"],
                 "productionNotes": record["PRODUCTION NOTES"],
             }
         )

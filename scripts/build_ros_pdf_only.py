@@ -45,7 +45,7 @@ story = [
     Paragraph(host_note, body),
     Spacer(1, 7),
 ]
-headers = ["SEG", "GAME / BREAK", "DEVELOPER / PUBLISHER", "START", "END", "HOSTS", "PRODUCTION NOTES"]
+headers = ["SEG", "GAME / BREAK", "DEVELOPER / PUBLISHER", "START", "END", "HOST", "PRODUCTION NOTES"]
 data = [[Paragraph(h, header) for h in headers]]
 for row in rows:
     if row["kind"] == "Game":
@@ -77,6 +77,9 @@ style = [
 for index, row in enumerate(rows, start=1):
     if row["kind"] == "Ad":
         style.append(("BACKGROUND", (0,index), (-1,index), colors.HexColor("#EADCF4")))
+    elif row["kind"] == "Hype":
+        style.append(("BACKGROUND", (0,index), (-1,index), colors.HexColor("#FCE4D6")))
+        style.append(("TEXTCOLOR", (0,index), (-1,index), colors.HexColor("#C2410C")))
     elif row["kind"] == "Transition":
         style.append(("BACKGROUND", (0,index), (-1,index), colors.HexColor("#F2F1F5")))
         style.append(("TEXTCOLOR", (0,index), (-1,index), colors.HexColor("#66616E")))

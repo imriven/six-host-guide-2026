@@ -14,7 +14,10 @@ class WorkbookDataTests(unittest.TestCase):
         games, schedule = load_workbook_data()
 
         self.assertEqual(41, len(games))
-        self.assertEqual(90, len(schedule["items"]))
+        self.assertEqual(91, len(schedule["items"]))
+        self.assertEqual("hype", schedule["items"][0]["kind"])
+        self.assertEqual("10:00 AM", schedule["items"][0]["start"])
+        self.assertEqual("12:00 PM", schedule["items"][0]["end"])
         self.assertIn("Host A =", schedule["hostNote"])
         self.assertEqual("Ascent Rivals", games[0]["title"])
         self.assertEqual("Hit & Haunted", games[16]["title"])
@@ -44,7 +47,7 @@ class WorkbookDataTests(unittest.TestCase):
                 "DEVELOPER / PUBLISHER": "",
                 "START": start,
                 "END": end,
-                "HOSTS": "A & B",
+                "HOST": "A",
                 "PRODUCTION NOTES": "",
             }
 
