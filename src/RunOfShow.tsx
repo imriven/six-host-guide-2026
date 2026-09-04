@@ -126,7 +126,7 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
               <button className="segmentSummary" onClick={() => setExpanded(expanded === item.id ? null : item.id)}>
                 <span className="segmentTime">{fmt(item.start)}<small>– {fmt(item.end)}</small></span>
                 <span className="segmentMain">
-                  <small>{item.segmentNumber ? `Segment ${String(item.segmentNumber).padStart(2, "0")} · Host ${item.hosts}` : item.kind === "ad" ? `Ad read · Host ${item.hosts}` : item.kind === "hype" ? `Hype Hour · Host ${item.hosts}` : "Break / Transition"}</small>
+                  <small>{item.segmentNumber ? `Segment ${String(item.segmentNumber).padStart(2, "0")} · Host ${item.hosts}` : item.kind === "ad" ? `Ad read · Host ${item.hosts}` : item.kind === "hype" ? "Hype Hour · Prerecorded" : "Break / Transition"}</small>
                   <strong>{item.title}</strong>
                   {game && <em>{game.d}</em>}
                 </span>

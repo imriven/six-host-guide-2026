@@ -18,6 +18,7 @@ class WorkbookDataTests(unittest.TestCase):
         self.assertEqual("hype", schedule["items"][0]["kind"])
         self.assertEqual("10:00 AM", schedule["items"][0]["start"])
         self.assertEqual("12:00 PM", schedule["items"][0]["end"])
+        self.assertEqual("Prerecorded", schedule["items"][0]["hosts"])
         self.assertIn("Host A =", schedule["hostNote"])
         self.assertEqual("Ascent Rivals", games[0]["title"])
         self.assertEqual("Hit & Haunted", games[16]["title"])
