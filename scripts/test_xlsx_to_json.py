@@ -15,7 +15,7 @@ class WorkbookDataTests(unittest.TestCase):
         games, schedule = load_workbook_data()
 
         self.assertEqual(42, len(games))
-        self.assertEqual(91, len(schedule["items"]))
+        self.assertEqual(90, len(schedule["items"]))
         self.assertEqual("hype", schedule["items"][0]["kind"])
         self.assertEqual("10:00 AM", schedule["items"][0]["start"])
         self.assertEqual("12:00 PM", schedule["items"][0]["end"])

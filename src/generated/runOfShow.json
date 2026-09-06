@@ -959,17 +959,6 @@
       "productionNotes": ""
     },
     {
-      "id": "transition-40",
-      "kind": "transition",
-      "segmentNumber": null,
-      "title": "Break / Transition",
-      "developer": "Block I",
-      "start": "5:48 PM",
-      "end": "5:49 PM",
-      "hosts": "-",
-      "productionNotes": ""
-    },
-    {
       "id": "video-2",
       "kind": "video",
       "segmentNumber": null,
@@ -981,7 +970,7 @@
       "productionNotes": ""
     },
     {
-      "id": "transition-41",
+      "id": "transition-40",
       "kind": "transition",
       "segmentNumber": null,
       "title": "Break / Transition",
