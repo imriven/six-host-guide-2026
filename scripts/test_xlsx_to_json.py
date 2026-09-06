@@ -36,6 +36,8 @@ class WorkbookDataTests(unittest.TestCase):
         generated_hosts = {item["hosts"] for item in schedule["items"]}
         self.assertTrue(host_identifiers)
         self.assertTrue(host_identifiers.isdisjoint(generated_hosts))
+        for previous, current in zip(schedule["items"], schedule["items"][1:]):
+            self.assertEqual(previous["end"], current["start"])
 
     def test_time_normalization_accepts_excel_numbers_and_text(self):
         self.assertEqual("10:00 AM", normalize_time("0.4166666667", "test"))
