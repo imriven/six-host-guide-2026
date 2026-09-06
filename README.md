@@ -4,10 +4,10 @@ A mobile-friendly React reference guide for the SIX 2026 lineup. It includes sea
 
 ## Run it locally
 
-1. Install Node.js 24.20.0 (with npm 11.19.0) and Python 3.14.7.
-2. Open a terminal in this folder.
+1. Install [mise](https://mise.jdx.dev/), then open a terminal in this folder.
+2. Run `mise install` to install the pinned Node.js, npm, Python, and uv versions.
 3. Run `npm install`.
-4. Run `python -m pip install -r requirements.txt`.
+4. Run `uv pip install --python .venv/bin/python -r requirements.txt`.
 5. Run `npm run dev`.
 6. Open the address shown in the terminal.
 
@@ -63,17 +63,23 @@ not committed or pushed back to GitHub. A local `npm run build` updates the
 tracked generated files in your working tree so they can be committed when
 desired.
 
-Game names link the worksheets: each game row in `Run of Show` must use the
-exact `Name` from `descriptions` in its `GAME / BREAK` cell. Move those rows to
-reorder the show. When renaming a game, update its name on both worksheets;
-validation reports missing, duplicate, or mismatched names before the build.
+Game names link the worksheets: each scheduled game row in `Run of Show` must
+use the exact `Name` from `descriptions` in its `GAME / BREAK` cell. Games may
+be left out of the schedule, but a scheduled game may appear only once. Move
+those rows to reorder the show. When renaming a scheduled game, update its name
+on both worksheets; validation reports duplicate or mismatched names before
+the build. Opening and closing rows are optional, but duplicates are rejected.
+Titles containing `Sponsor Segment` are treated as sponsor/ad rows, and titles
+ending in `Video` or `Videos` are treated as prerecorded showcase rows.
 
 On `descriptions`, `Platforms` preserves the complete platform list while
 `Display Platforms` controls the app's filter chips. `Availability` must be
 either `Released` or `Not yet released`. `Official URL` and `Steam App ID` may
 be blank; the other columns are required. On `Run of Show`, edits to ordering,
 times, hosts, the host-assignment note, and production notes all flow into the
-app after regeneration.
+app after regeneration. Host identifiers such as `A` are expanded to the names
+in the `Host A = ...` assignment note in generated JSON, documents, and the
+website; descriptive values such as `Prerecorded` and `All Hosts` are retained.
 
 Useful commands:
 

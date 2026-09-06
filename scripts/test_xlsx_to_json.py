@@ -5,16 +5,17 @@ from xlsx_to_json import (
     RUN_HEADERS,
     load_workbook_data,
     normalize_time,
+    parse_host_assignments,
     validate_schedule,
 )
 
 
 class WorkbookDataTests(unittest.TestCase):
-    def test_current_workbook_has_complete_linked_data(self):
+    def test_current_workbook_has_supported_linked_data(self):
         games, schedule = load_workbook_data()
 
-        self.assertEqual(41, len(games))
-        self.assertEqual(91, len(schedule["items"]))
+        self.assertEqual(42, len(games))
+        self.assertEqual(92, len(schedule["items"]))
         self.assertEqual("hype", schedule["items"][0]["kind"])
         self.assertEqual("10:00 AM", schedule["items"][0]["start"])
         self.assertEqual("12:00 PM", schedule["items"][0]["end"])
@@ -22,18 +23,49 @@ class WorkbookDataTests(unittest.TestCase):
         self.assertIn("Host A =", schedule["hostNote"])
         self.assertEqual("Ascent Rivals", games[0]["title"])
         self.assertEqual("Hit & Haunted", games[16]["title"])
+        scheduled_games = {
+            item["title"] for item in schedule["items"] if item["kind"] == "game"
+        }
         self.assertEqual(
-            {game["title"] for game in games},
-            {
-                item["title"]
-                for item in schedule["items"]
-                if item["kind"] == "game"
-            },
+            {"Hit & Haunted", "Tower Lab"},
+            {game["title"] for game in games} - scheduled_games,
         )
+        self.assertEqual("ad", schedule["items"][11]["kind"])
+        self.assertEqual("video", schedule["items"][84]["kind"])
+        self.assertEqual("Stephazoid", schedule["items"][1]["hosts"])
 
     def test_time_normalization_accepts_excel_numbers_and_text(self):
         self.assertEqual("10:00 AM", normalize_time("0.4166666667", "test"))
         self.assertEqual("4:05 PM", normalize_time("16:05", "test"))
+
+    def test_host_identifiers_resolve_from_assignment_note(self):
+        assignments = parse_host_assignments(
+            "Host A = Alice | Host B2 = Bob Example | Host C = Charlie"
+        )
+
+        self.assertEqual(
+            {"A": "Alice", "B2": "Bob Example", "C": "Charlie"}, assignments
+        )
+
+        def row(host):
+            return {
+                "SEG": "-",
+                "GAME / BREAK": "Break / Transition",
+                "DEVELOPER / PUBLISHER": "",
+                "START": "10:00 AM",
+                "END": "10:05 AM",
+                "HOST": host,
+                "PRODUCTION NOTES": "",
+            }
+
+        schedule = validate_schedule(
+            [row("A"), row("Prerecorded"), row("All Hosts")], [], assignments
+        )
+
+        self.assertEqual(
+            ["Alice", "Prerecorded", "All Hosts"],
+            [item["hosts"] for item in schedule],
+        )
 
     def test_schema_uses_name_and_production_notes(self):
         self.assertEqual("Name", GAME_HEADERS[0])
@@ -66,6 +98,29 @@ class WorkbookDataTests(unittest.TestCase):
             ["Second Game", "First Game"],
             [item["title"] for item in schedule[1:3]],
         )
+
+    def test_schedule_allows_omitted_games_and_optional_boundary_rows(self):
+        def row(segment, title):
+            return {
+                "SEG": segment,
+                "GAME / BREAK": title,
+                "DEVELOPER / PUBLISHER": "",
+                "START": "10:00 AM",
+                "END": "10:05 AM",
+                "HOST": "A",
+                "PRODUCTION NOTES": "",
+            }
+
+        schedule = validate_schedule(
+            [
+                row("1", "Scheduled Game"),
+                row("-", "Example Sponsor Segment"),
+                row("-", "International Showcase Video"),
+            ],
+            [{"title": "Scheduled Game"}, {"title": "Omitted Game"}],
+        )
+
+        self.assertEqual(["game", "ad", "video"], [item["kind"] for item in schedule])
 
 
 if __name__ == "__main__":

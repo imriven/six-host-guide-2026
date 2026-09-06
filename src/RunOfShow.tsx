@@ -10,7 +10,7 @@ type Props = {
 
 type ScheduleItem = {
   id: string;
-  kind: "hype" | "intro" | "game" | "ad" | "transition" | "closing";
+  kind: "hype" | "intro" | "game" | "ad" | "video" | "transition" | "closing";
   start: Date;
   end: Date;
   gameIndex?: number;
@@ -81,6 +81,7 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
   const activeIndex = schedule.findIndex((item) => item.id === activeId);
   const active = activeIndex >= 0 ? schedule[activeIndex] : null;
   const next = activeIndex >= 0 ? schedule[activeIndex + 1] : schedule.find((item) => item.start > now);
+  const closing = schedule.find((item) => item.kind === "closing");
 
   const jumpToNow = () => {
     setManualId(null);
@@ -126,7 +127,7 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
               <button className="segmentSummary" onClick={() => setExpanded(expanded === item.id ? null : item.id)}>
                 <span className="segmentTime">{fmt(item.start)}<small>– {fmt(item.end)}</small></span>
                 <span className="segmentMain">
-                  <small>{item.segmentNumber ? `Segment ${String(item.segmentNumber).padStart(2, "0")} · Host ${item.hosts}` : item.kind === "ad" ? `Ad read · Host ${item.hosts}` : item.kind === "hype" ? "Hype Hour · Prerecorded" : "Break / Transition"}</small>
+                  <small>{item.segmentNumber ? `Segment ${String(item.segmentNumber).padStart(2, "0")} · ${item.hosts}` : item.kind === "ad" ? `Sponsor segment · ${item.hosts}` : item.kind === "video" ? "Showcase video · Prerecorded" : item.kind === "hype" ? "Hype Hour · Prerecorded" : "Break / Transition"}</small>
                   <strong>{item.title}</strong>
                   {game && <em>{game.d}</em>}
                 </span>
@@ -144,10 +145,10 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
                       <section className="nextUpCard">
                         <h3>Next up after break</h3>
                         {nextGameItem && nextGame ? (
-                          <p><b>{fmt(nextGameItem.start)} · Host {nextGameItem.hosts}</b><br />{nextGame.t} · {nextGame.d}</p>
-                        ) : (
-                          <p><b>{fmt(schedule[schedule.length - 1].start)} · Host A</b><br />Closing / Thank You</p>
-                        )}
+                          <p><b>{fmt(nextGameItem.start)} · {nextGameItem.hosts}</b><br />{nextGame.t} · {nextGame.d}</p>
+                        ) : closing ? (
+                          <p><b>{fmt(closing.start)} · {closing.hosts}</b><br />{closing.title}</p>
+                        ) : <p><b>End of show</b><br />No later game is scheduled.</p>}
                       </section>
                     </div>
                     <div className="detailActions"><button onClick={() => onOpenGame(item.gameIndex!)}>Open complete game card for talking points →</button><button onClick={() => setManualId(item.id)}>Mark as current segment</button></div>
@@ -158,6 +159,9 @@ export default function RunOfShow({ games, onOpenGame }: Props) {
                     <button onClick={() => setManualId(item.id)}>Mark as current segment</button>
                   </> : item.kind === "hype" ? <>
                     <h3>Hype Hour cue</h3><p>Preview the SIX lineup and build excitement for the showcase before the main broadcast begins.</p>
+                    <button onClick={() => setManualId(item.id)}>Mark as current segment</button>
+                  </> : item.kind === "video" ? <>
+                    <h3>Prerecorded showcase cue</h3><p>Roll the scheduled international showcase video, then prepare the next live segment.</p>
                     <button onClick={() => setManualId(item.id)}>Mark as current segment</button>
                   </> : item.kind === "intro" ? <>
                     <h3>Opening cue</h3><p>Welcome viewers, introduce the event and hosts, explain the showcase format, and lead into the first game.</p>

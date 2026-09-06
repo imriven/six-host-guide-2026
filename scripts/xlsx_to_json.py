@@ -158,6 +158,15 @@ def comma_list(value: str) -> list[str]:
     return [item.strip() for item in value.split(",") if item.strip()]
 
 
+def parse_host_assignments(value: str) -> dict[str, str]:
+    assignments: dict[str, str] = {}
+    for item in value.split("|"):
+        match = re.fullmatch(r"\s*Host\s+([A-Za-z0-9]+)\s*=\s*(.+?)\s*", item)
+        if match:
+            assignments[match.group(1)] = match.group(2)
+    return assignments
+
+
 def valid_url(value: str) -> bool:
     parsed = urlparse(value)
     return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
@@ -260,8 +269,10 @@ def schedule_kind(title: str, segment: str, game_titles: set[str]) -> str:
         return "game"
     if title == "Break / Transition":
         return "transition"
-    if "Sponsor Ad Read" in title:
+    if "Sponsor Ad Read" in title or "Sponsor Segment" in title:
         return "ad"
+    if title.endswith((" Video", " Videos")):
+        return "video"
     if title.startswith("Opening"):
         return "intro"
     if title.startswith("Closing"):
@@ -274,7 +285,9 @@ def schedule_kind(title: str, segment: str, game_titles: set[str]) -> str:
 
 
 def validate_schedule(
-    records: list[dict[str, str]], games: list[dict[str, object]]
+    records: list[dict[str, str]],
+    games: list[dict[str, object]],
+    host_assignments: dict[str, str] | None = None,
 ) -> list[dict[str, object]]:
     game_titles = {str(game["title"]) for game in games}
     kind_counts: Counter[str] = Counter()
@@ -313,7 +326,7 @@ def validate_schedule(
                 "developer": record["DEVELOPER / PUBLISHER"],
                 "start": start,
                 "end": end,
-                "hosts": record["HOST"],
+                "hosts": (host_assignments or {}).get(record["HOST"], record["HOST"]),
                 "productionNotes": record["PRODUCTION NOTES"],
             }
         )
@@ -321,16 +334,13 @@ def validate_schedule(
     scheduled_game_titles = [
         str(item["title"]) for item in schedule if item["kind"] == "game"
     ]
-    missing = sorted(game_titles - set(scheduled_game_titles))
     duplicates = sorted(
         title for title, count in Counter(scheduled_game_titles).items() if count > 1
     )
-    if missing:
-        errors.append(f"Games missing from Run of Show: {', '.join(missing)}")
     if duplicates:
         errors.append(f"Games scheduled more than once: {', '.join(duplicates)}")
-    if kind_counts["intro"] != 1 or kind_counts["closing"] != 1:
-        errors.append("Run of Show must contain exactly one opening and one closing row")
+    if kind_counts["intro"] > 1 or kind_counts["closing"] > 1:
+        errors.append("Run of Show must not contain duplicate opening or closing rows")
     if errors:
         raise WorkbookValidationError("Workbook validation failed:\n- " + "\n- ".join(errors))
     return schedule
@@ -367,7 +377,10 @@ def load_workbook_data(
         raise WorkbookValidationError(
             f"{RUN_SHEET!r} is missing the Host A / Host B assignment note"
         )
-    schedule = {"hostNote": host_note, "items": validate_schedule(run_records, games)}
+    schedule = {
+        "hostNote": host_note,
+        "items": validate_schedule(run_records, games, parse_host_assignments(host_note)),
+    }
     return games, schedule
 
 

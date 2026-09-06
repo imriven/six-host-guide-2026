@@ -872,5 +872,28 @@
     "youtubeVideoId": "Pbii7_HpooQ",
     "mediaSlug": "wrestlestory",
     "mediaFolder": "wrestlestory"
+  },
+  {
+    "title": "Project Cradle",
+    "developer": "ShazySoft",
+    "platforms": [
+      "PC",
+      "Steam",
+      "itch.io"
+    ],
+    "displayPlatforms": [
+      "Steam",
+      "itch.io"
+    ],
+    "availability": "Not yet released",
+    "release": "2027",
+    "demo": "Demo available on Steam and itch.io",
+    "overview": "A fast momentum platformer starring a nimble robotic kangaroo built for speed, aerial tricks, and exploration.",
+    "description": "A momentum-based action platformer from ShazySoft. Players control HelperBody, a robotic kangaroo search-and-rescue unit, and build speed by riding slopes, wall-jumping, grinding, bursting, and redirecting momentum through mysterious underground facilities while searching for humanity.",
+    "officialUrl": "https://store.steampowered.com/app/2757950/Project_Cradle/",
+    "steamAppId": "2757950",
+    "youtubeVideoId": "0_2wcoYW8gA",
+    "mediaSlug": "projectcradle",
+    "mediaFolder": "projectcradle"
   }
 ]

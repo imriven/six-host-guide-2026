@@ -80,7 +80,7 @@ for row in rows:
     for index, value in enumerate(values):
         is_title = index == 1
         write_cell(cells[index], value,
-                   bold=is_title and row["kind"] in ("Game", "Hype", "Intro", "Closing", "Ad"),
+                   bold=is_title and row["kind"] in ("Game", "Hype", "Intro", "Closing", "Ad", "Video"),
                    italic=is_title and row["kind"] == "Transition",
                    color="7445C7" if is_title and row["kind"] == "Game" else "202028")
         cells[index].width = Inches(widths[index])
@@ -92,6 +92,8 @@ for row in rows:
             for paragraph in cell.paragraphs:
                 for run in paragraph.runs:
                     run.font.color.rgb = RGBColor(194, 65, 12)
+    elif row["kind"] == "Video":
+        for cell in cells: shade(cell, "E3F1FB")
     elif row["kind"] == "Transition":
         for cell in cells: shade(cell, "F2F1F5")
     elif row["kind"] in ("Intro", "Closing"):

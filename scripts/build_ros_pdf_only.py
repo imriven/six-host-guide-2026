@@ -90,4 +90,5 @@ story.append(table)
 doc.build(story)
 
 ads = [r for r in rows if r["kind"] == "Ad"]
-print({"numbered_segments": 43, "total_rows": len(rows), "ads": len(ads), "end": rows[-1]["end"], "ad_hosts": [(r["start"], r["hosts"]) for r in ads]})
+numbered_segments = sum(bool(row["segment"]) for row in rows)
+print({"numbered_segments": numbered_segments, "total_rows": len(rows), "ads": len(ads), "end": rows[-1]["end"], "ad_hosts": [(r["start"], r["hosts"]) for r in ads]})
