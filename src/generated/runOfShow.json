@@ -1,5 +1,5 @@
 {
-  "hostNote": "Host A = Stephazoid | Host B = AbdallahSmash | Host C = MacnCheesep1z | Host D = Rockagoth | Host E = AlchemistJoker",
+  "hostNote": "Host A = Unavailable | Host B = AbdallahSmash | Host C = MacnCheesep1z | Host D = Rockagoth | Host E = AlchemistJoker",
   "items": [
     {
       "id": "hype-1",
@@ -20,7 +20,7 @@
       "developer": "PossQueen · Booth L27",
       "start": "12:00 PM",
       "end": "12:06 PM",
-      "hosts": "Stephazoid",
+      "hosts": "MacnCheesep1z",
       "productionNotes": ""
     },
     {
@@ -130,7 +130,7 @@
       "developer": "Sponsor segment · L01",
       "start": "12:35 PM",
       "end": "12:45 PM",
-      "hosts": "Stephazoid",
+      "hosts": "AbdallahSmash",
       "productionNotes": ""
     },
     {
@@ -141,7 +141,7 @@
       "developer": "Quadrant Five · Booth L22",
       "start": "12:45 PM",
       "end": "12:51 PM",
-      "hosts": "Stephazoid",
+      "hosts": "Rockagoth",
       "productionNotes": ""
     },
     {
@@ -262,7 +262,7 @@
       "developer": "Hat Wobble Games · Booth L17",
       "start": "1:30 PM",
       "end": "1:36 PM",
-      "hosts": "Stephazoid",
+      "hosts": "AlchemistJoker",
       "productionNotes": ""
     },
     {
@@ -383,7 +383,7 @@
       "developer": "Displacer Labs · Booth L12",
       "start": "2:15 PM",
       "end": "2:21 PM",
-      "hosts": "Stephazoid",
+      "hosts": "AbdallahSmash",
       "productionNotes": ""
     },
     {
@@ -504,7 +504,7 @@
       "developer": "Joshua Rosen (Rakelock LLC) · Booth L35",
       "start": "3:00 PM",
       "end": "3:06 PM",
-      "hosts": "Stephazoid",
+      "hosts": "AlchemistJoker",
       "productionNotes": ""
     },
     {
@@ -603,7 +603,7 @@
       "developer": "GENUN Games · Booth L11",
       "start": "3:35 PM",
       "end": "3:41 PM",
-      "hosts": "Stephazoid",
+      "hosts": "Rockagoth",
       "productionNotes": ""
     },
     {
@@ -691,7 +691,7 @@
       "developer": "Sponsor segment · L06",
       "start": "4:03 PM",
       "end": "4:10 PM",
-      "hosts": "AlchemistJoker",
+      "hosts": "AbdallahSmash",
       "productionNotes": ""
     },
     {
@@ -702,7 +702,7 @@
       "developer": "Entropico · Booth U21",
       "start": "4:10 PM",
       "end": "4:16 PM",
-      "hosts": "Stephazoid",
+      "hosts": "MacnCheesep1z",
       "productionNotes": ""
     },
     {
@@ -812,7 +812,7 @@
       "developer": "Sponsor segment · 000",
       "start": "4:45 PM",
       "end": "4:55 PM",
-      "hosts": "Stephazoid",
+      "hosts": "MacnCheesep1z",
       "productionNotes": ""
     },
     {
@@ -889,7 +889,7 @@
       "developer": "ExceptioNULL Games · Booth U18",
       "start": "5:16 PM",
       "end": "5:22 PM",
-      "hosts": "Stephazoid",
+      "hosts": "AlchemistJoker",
       "productionNotes": ""
     },
     {
