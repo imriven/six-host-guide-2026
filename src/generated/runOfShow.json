@@ -959,17 +959,6 @@
       "productionNotes": ""
     },
     {
-      "id": "game-40",
-      "kind": "game",
-      "segmentNumber": 40,
-      "title": "The Assessment",
-      "developer": "Miga Games · Booth U11",
-      "start": "5:42 PM",
-      "end": "5:48 PM",
-      "hosts": "Rockagoth",
-      "productionNotes": ""
-    },
-    {
       "id": "transition-40",
       "kind": "transition",
       "segmentNumber": null,
