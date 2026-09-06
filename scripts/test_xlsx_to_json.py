@@ -1,4 +1,5 @@
 import unittest
+from datetime import datetime
 
 from xlsx_to_json import (
     GAME_HEADERS,
@@ -38,6 +39,11 @@ class WorkbookDataTests(unittest.TestCase):
         self.assertTrue(host_identifiers.isdisjoint(generated_hosts))
         for previous, current in zip(schedule["items"], schedule["items"][1:]):
             self.assertEqual(previous["end"], current["start"])
+        for item in schedule["items"]:
+            if item["kind"] == "transition":
+                start = datetime.strptime(item["start"], "%I:%M %p")
+                end = datetime.strptime(item["end"], "%I:%M %p")
+                self.assertEqual(60, (end - start).total_seconds())
 
     def test_time_normalization_accepts_excel_numbers_and_text(self):
         self.assertEqual("10:00 AM", normalize_time("0.4166666667", "test"))
